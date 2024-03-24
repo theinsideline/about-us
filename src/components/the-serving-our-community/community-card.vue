@@ -56,6 +56,7 @@ defineProps({
 
   &__title {
     cursor: default;
+    text-align: center;
 
     h2 {
       font-size: $h2_font_size;
