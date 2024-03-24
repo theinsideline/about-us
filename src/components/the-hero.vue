@@ -27,6 +27,8 @@
 </template>
 
 <style scoped lang="scss">
+@import "@/assets/scss/fonts.scss";
+
 .the-hero {
   display: flex;
   justify-content: center;
@@ -60,14 +62,14 @@
         h2 {
           text-align: center;
           font-family: Oswald;
-          font-size: 25px;
+          font-size: $h2_font_size;
           color: white;
         }
 
         span {
           text-align: center;
           font-family: Inter;
-          font-size: 16px;
+          font-size: $span_font_size;
           color: white;
         }
       }
@@ -86,7 +88,7 @@
           font-family: Inter;
           font-size: 16px;
           cursor: pointer;
-          transition: all .3s ease-in;
+          transition: all 0.3s ease-in;
 
           &:hover {
             transform: scale(1.2, 1.2);
