@@ -1,16 +1,11 @@
 <template>
   <TheHero />
+  <TheServingOurCommunity />
 </template>
 
-<script>
-import TheHero from "./components/the-hero.vue";
-
-export default {
-  name: "App",
-  components: {
-    TheHero,
-  },
-};
+<script setup lang="ts">
+import TheHero from "@/components/the-hero/the-hero.vue";
+import TheServingOurCommunity from "@/components/the-serving-our-community/the-serving-our-community.vue";
 </script>
 
 <style>
