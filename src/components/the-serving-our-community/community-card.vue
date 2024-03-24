@@ -27,7 +27,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="community-card" :style="{ 'background-image': `url(${image})` }">
+  <a :href="buttonLink" class="community-card" :style="{ 'background-image': `url(${image})` }">
     <div class="community-card__title">
       <h2>{{ title }}</h2>
     </div>
@@ -37,7 +37,7 @@ defineProps({
     <div class="community-card__button">
       <LinkButton :text="buttonText" :link="buttonLink" />
     </div>
-  </div>
+</a>
 </template>
 
 <style lang="scss">
@@ -53,9 +53,11 @@ defineProps({
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 
   &__title {
-    cursor: default;
     text-align: center;
 
     h2 {

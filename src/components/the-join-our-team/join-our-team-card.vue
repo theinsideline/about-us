@@ -31,7 +31,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="join-our-team-card">
+  <a :href="buttonLink" class="join-our-team-card">
     <div class="join-our-team-card__icon">
       <img :src="icon" alt="Join out ream icon" />
     </div>
@@ -47,7 +47,7 @@ defineProps({
     <div class="join-our-team-card__button-link">
       <LinkButton :text="buttonText" :link="buttonLink" />
     </div>
-  </div>
+  </a>
 </template>
 
 <style lang="scss" scoped>
@@ -63,6 +63,8 @@ defineProps({
   flex-direction: column;
   padding-top: 20px;
   padding-bottom: 80px;
+  text-decoration: none;
+  color: black;
 
   &__icon {
     display: flex;
@@ -77,10 +79,13 @@ defineProps({
   }
 
   &__title {
+    margin-bottom: 33px;
+
     h2 {
       text-align: center;
       font-size: $h2_font_size;
       font-family: Oswald;
+      margin: 0;
     }
   }
 
