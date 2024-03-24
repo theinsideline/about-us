@@ -2,7 +2,11 @@
 
 <template>
   <div class="the-hero">
-    <img class="hero__background_image" src="/hero.png" alt="Hero" />
+    <img
+      class="hero__background_image"
+      src="https://theeinsideline.github.io/about-us/public/hero.png"
+      alt="Hero"
+    />
 
     <div class="hero__content">
       <div class="content_title">
@@ -22,12 +26,15 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .the-hero {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
 }
 
 .hero__background_image {
@@ -56,12 +63,14 @@
   text-align: center;
   font-family: Oswald;
   font-size: 25px;
+  color: white;
 }
 
 .content_title span {
   text-align: center;
   font-family: Inter;
   font-size: 16px;
+  color: white;
 }
 
 .content__learn_more {
