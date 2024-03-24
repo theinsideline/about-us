@@ -35,7 +35,7 @@ defineProps({
 
   &:hover {
     background: #747474;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease-in-out;
 
     i {
       animation: MoveUpDown 1s linear infinite;
