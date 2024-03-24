@@ -19,7 +19,7 @@
           bikers</span
         >
       </div>
-      <div class="content__learn_more">
+      <div class="content__learn-more">
         <span>Learn More <i>↓</i></span>
       </div>
     </div>
@@ -74,7 +74,7 @@
         }
       }
 
-      &__learn_more {
+      &__learn-more {
         position: absolute;
         display: flex;
         justify-content: center;
