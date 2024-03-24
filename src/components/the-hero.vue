@@ -51,6 +51,7 @@
     align-items: center;
     position: absolute;
     height: -webkit-fill-available;
+    cursor: default;
 
     .content {
       &__title {
