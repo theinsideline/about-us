@@ -61,8 +61,8 @@ defineProps({
   padding: 30px;
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
-  padding-bottom: 110px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 
   &__icon {
     display: flex;
