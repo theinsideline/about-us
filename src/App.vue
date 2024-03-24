@@ -1,6 +1,8 @@
 <template>
-  <TheHero />
-  <TheServingOurCommunity />
+  <div>
+    <TheHero />
+    <TheServingOurCommunity />
+  </div>
 </template>
 
 <script lang="ts">
