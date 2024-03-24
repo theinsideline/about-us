@@ -1,25 +1,28 @@
 <template>
-  <HelloWorld />
+    <TheHero />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheHero from './components/the-hero.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TheHero
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+}
+
+
+#about_us {
+  width: calc(100% - 2* var(--component-padding));
+  margin-left: auto;
+  margin-left: auto;
+  background-color: grey;
 }
 </style>
