@@ -1,18 +1,23 @@
 <template>
-    <TheHero />
+  <TheHero />
 </template>
 
 <script>
-import TheHero from './components/the-hero.vue'
+import TheHero from "./components/the-hero.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    TheHero
-  }
-}
+    TheHero,
+  },
+};
 </script>
 
 <style>
-
+#about_us {
+  width: calc(100% - 2 * var(--component-padding));
+  margin-left: auto;
+  margin-left: auto;
+  background-color: grey;
+}
 </style>

@@ -1,14 +1,14 @@
-<script setup></script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="the-hero">
     <img
-      class="hero__background_image"
+      class="the-hero__background-image"
       src="https://theeinsideline.github.io/about-us/public/hero.png"
       alt="Hero"
     />
 
-    <div class="hero__content">
+    <div class="the-hero__content">
       <div class="content_title">
         <h2>We Are Mountain Bikers</h2>
         <span
@@ -20,13 +20,13 @@
         >
       </div>
       <div class="content__learn_more">
-        <span class="learn_more">Learn More <i>↓</i></span>
+        <span>Learn More <i>↓</i></span>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .the-hero {
   display: flex;
   justify-content: center;
@@ -35,75 +35,77 @@
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
-}
 
-.hero__background_image {
-  width: 100vw;
-  height: -webkit-fill-available;
-  filter: brightness(50%);
-}
-
-.hero__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: -webkit-fill-available;
-}
-
-.content_title {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  max-width: 50%;
-}
-
-.content_title h2 {
-  text-align: center;
-  font-family: Oswald;
-  font-size: 25px;
-  color: white;
-}
-
-.content_title span {
-  text-align: center;
-  font-family: Inter;
-  font-size: 16px;
-  color: white;
-}
-
-.content__learn_more {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: max-content;
-  align-items: end;
-}
-
-.learn_more {
-  color: white;
-  padding-bottom: 10px;
-  font-family: Inter;
-  font-size: 16px;
-}
-
-i {
-  animation: MoveUpDown 1s linear infinite;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  margin-left: 5px;
-}
-
-@keyframes MoveUpDown {
-  0%,
-  100% {
-    bottom: 0;
+  &__background-image {
+    width: 100vw;
+    height: -webkit-fill-available;
+    filter: brightness(50%);
   }
-  50% {
-    bottom: 3px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: -webkit-fill-available;
+
+    .content {
+      &_title {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        max-width: 50%;
+
+        h2 {
+          text-align: center;
+          font-family: Oswald;
+          font-size: 25px;
+          color: white;
+        }
+
+        span {
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          color: white;
+        }
+      }
+
+      &__learn_more {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: max-content;
+        align-items: end;
+
+        span {
+          color: white;
+          padding-bottom: 10px;
+          font-family: Inter;
+          font-size: 16px;
+
+          i {
+            animation: MoveUpDown 1s linear infinite;
+            position: relative;
+            left: 0;
+            bottom: 0;
+            margin-left: 5px;
+          }
+
+          @keyframes MoveUpDown {
+            0%,
+            100% {
+              bottom: 0;
+            }
+            50% {
+              bottom: 3px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>
