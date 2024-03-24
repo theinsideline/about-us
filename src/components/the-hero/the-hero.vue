@@ -10,7 +10,7 @@
 
     <div class="the-hero__content">
       <div class="content__title">
-        <h3>We Are Mountain Bikers</h3>
+        <h2>We Are Mountain Bikers</h2>
         <span
           >Drooling over new technology, daydreaming about our next ride and
           wrenching on bikes. We only sell what we ride, and for that reason you
@@ -58,12 +58,12 @@
         display: flex;
         flex-direction: column;
         color: white;
-        max-width: 50%;
+        max-width: 40%;
 
-        h3 {
+        h2 {
           text-align: center;
           font-family: Oswald;
-          font-size: $h3_font_size;
+          font-size: $h2_font_size;
           color: white;
         }
 

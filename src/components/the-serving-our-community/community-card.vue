@@ -29,7 +29,7 @@ defineProps({
 <template>
   <div class="community-card" :style="{ 'background-image': `url(${image})` }">
     <div class="community-card__title">
-      <h3>{{ title }}</h3>
+      <h2>{{ title }}</h2>
     </div>
     <div class="community-card__description">
       <span>{{ description }}</span>
@@ -58,7 +58,7 @@ defineProps({
     cursor: default;
 
     h3 {
-      font-size: $h3_font_size;
+      font-size: $h2_font_size;
       font-family: Oswald;
       text-align: center;
     }
