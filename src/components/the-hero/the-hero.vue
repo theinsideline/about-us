@@ -87,7 +87,7 @@
           color: white;
           padding-bottom: 10px;
           font-family: Inter;
-          font-size: 16px;
+          font-size: $span_font_size;
           cursor: pointer;
           transition: all 0.3s ease-in;
 
