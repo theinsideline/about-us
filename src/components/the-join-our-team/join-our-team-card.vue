@@ -61,14 +61,14 @@ defineProps({
   padding: 30px;
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 80px;
 
   &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px;
+    margin: 30px;
 
     img {
       width: 100px;
