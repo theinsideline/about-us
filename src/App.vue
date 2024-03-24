@@ -3,9 +3,16 @@
   <TheServingOurCommunity />
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
 import TheHero from "@/components/the-hero/the-hero.vue";
 import TheServingOurCommunity from "@/components/the-serving-our-community/the-serving-our-community.vue";
+
+export default {
+  components: {
+    TheHero,
+    TheServingOurCommunity,
+  },
+};
 </script>
 
 <style>
