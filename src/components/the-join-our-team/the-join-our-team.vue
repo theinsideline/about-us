@@ -4,7 +4,7 @@ import JoinOurTeamCard from "@/components/the-join-our-team/join-our-team-card.v
 
 const cards = ref([
   {
-    icon: "/Icons_Flame.svg",
+    icon: "https://theeinsideline.github.io/about-us/public/Icons_Flame.svg",
     title: "Careers",
     subTitle: "Passions for bikes?<wbr/>Want to work in the industry?",
     description:
@@ -13,7 +13,7 @@ const cards = ref([
     buttonLink: "https://www.theinsideline.ca/service/careers/",
   },
   {
-    icon: "/Icons_Flag.svg",
+    icon: "https://theeinsideline.github.io/about-us/public/Icons_Flag.svg",
     title: "Ambassadors",
     subTitle: "Grassroots racing?<wbr/> Local hero?<wbr/>Social media influencer?",
     description:
@@ -22,7 +22,7 @@ const cards = ref([
     buttonLink: "",
   },
   {
-    icon: "/Icons_Community.svg",
+    icon: "https://theeinsideline.github.io/about-us/public/Icons_Community.svg",
     title: "Affiliates",
     subTitle: "Producing content?<wbr/>Strong media presence?",
     description:
