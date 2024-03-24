@@ -28,7 +28,7 @@ defineProps({
   text-align: center;
   width: 100%;
   max-width: 350px;
-  padding: 15px;
+  padding: 12px;
   border-radius: 30px;
   font-family: Inter;
   font-size: $link_button_font_size;
