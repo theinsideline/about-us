@@ -1,6 +1,14 @@
+<script setup>
+import { reactive } from 'vue'
+import { useMouse } from '../helpers/mouse'
+
+const mouse = reactive(useMouse())
+</script>
+
 <template>
   <div class="hello">
     <p>Vue test</p> 
+    <p>Mouse position is at: {{ mouse.x }}, {{ mouse.y }}</p>
   </div>
 </template>
 
