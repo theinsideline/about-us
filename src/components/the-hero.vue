@@ -9,7 +9,7 @@
     />
 
     <div class="the-hero__content">
-      <div class="content_title">
+      <div class="content__title">
         <h2>We Are Mountain Bikers</h2>
         <span
           >Drooling over new technology, daydreaming about our next ride and
@@ -53,7 +53,7 @@
     height: -webkit-fill-available;
 
     .content {
-      &_title {
+      &__title {
         display: flex;
         flex-direction: column;
         color: white;
