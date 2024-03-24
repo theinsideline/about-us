@@ -85,6 +85,12 @@
           padding-bottom: 10px;
           font-family: Inter;
           font-size: 16px;
+          cursor: pointer;
+          transition: all .3s ease-in;
+
+          &:hover {
+            transform: scale(1.2, 1.2);
+          }
 
           i {
             animation: MoveUpDown 1s linear infinite;
