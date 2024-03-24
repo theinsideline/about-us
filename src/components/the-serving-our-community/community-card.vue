@@ -57,7 +57,7 @@ defineProps({
   &__title {
     cursor: default;
 
-    h3 {
+    h2 {
       font-size: $h2_font_size;
       font-family: Oswald;
       text-align: center;
