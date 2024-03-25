@@ -27,7 +27,11 @@ defineProps({
 </script>
 
 <template>
-  <a :href="buttonLink" class="community-card" :style="{ 'background-image': `url(${image})` }">
+  <a
+    class="community-card"
+    :href="buttonLink"
+    :style="{ 'background-image': `url(${image})` }"
+  >
     <div class="community-card__title">
       <h2>{{ title }}</h2>
     </div>
@@ -37,7 +41,7 @@ defineProps({
     <div class="community-card__button">
       <LinkButton :text="buttonText" :link="buttonLink" />
     </div>
-</a>
+  </a>
 </template>
 
 <style lang="scss" scoped>
@@ -89,56 +93,56 @@ defineProps({
 }
 
 @include mobile {
-    .community-card {
-        height: 350px;
+  .community-card {
+    height: 350px;
 
-        &__title {
-            h2 {
-                font-size: $h2_font_size_mobile;
-            }
-        }
-
-        &__description {
-            span {
-                font-size: $span_font_size_mobile;
-            }
-        }
+    &__title {
+      h2 {
+        font-size: $h2_font_size_mobile;
+      }
     }
+
+    &__description {
+      span {
+        font-size: $span_font_size_mobile;
+      }
+    }
+  }
 }
 
 @include tablet {
-    .community-card {
-        height: 350px;
+  .community-card {
+    height: 350px;
 
-        &__title {
-            h2 {
-                font-size: $h2_font_size_mobile;
-            }
-        }
-
-        &__description {
-            span {
-                font-size: $span_font_size_mobile;
-            }
-        }
+    &__title {
+      h2 {
+        font-size: $h2_font_size_mobile;
+      }
     }
+
+    &__description {
+      span {
+        font-size: $span_font_size_mobile;
+      }
+    }
+  }
 }
 
 @include laptop {
-    .community-card {
-        height: 350px;
+  .community-card {
+    height: 350px;
 
-        &__title {
-            h2 {
-                font-size: $h2_font_size_mobile;
-            }
-        }
-
-        &__description {
-            span {
-                font-size: $span_font_size_mobile;
-            }
-        }
+    &__title {
+      h2 {
+        font-size: $h2_font_size_mobile;
+      }
     }
+
+    &__description {
+      span {
+        font-size: $span_font_size_mobile;
+      }
+    }
+  }
 }
 </style>

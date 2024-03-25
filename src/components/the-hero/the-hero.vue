@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PUBLIC_DOMAIN } from '@/constants'
+import { PUBLIC_DOMAIN } from "@/constants";
 </script>
 
 <template>
@@ -89,7 +89,7 @@ import { PUBLIC_DOMAIN } from '@/constants'
       cursor: pointer;
       display: block;
       transition: all 0.3s ease-in;
-      
+
       &:hover {
         transform: scale(1.2, 1.2);
       }
@@ -119,7 +119,7 @@ import { PUBLIC_DOMAIN } from '@/constants'
   .the-hero {
     &__title {
       width: 90%;
-      
+
       h2 {
         font-size: $h2_font_size_mobile;
       }
@@ -141,7 +141,7 @@ import { PUBLIC_DOMAIN } from '@/constants'
   .the-hero {
     &__title {
       width: 80%;
-      
+
       h2 {
         font-size: $h2_font_size_mobile;
       }
@@ -163,7 +163,7 @@ import { PUBLIC_DOMAIN } from '@/constants'
   .the-hero {
     &__title {
       width: 70%;
-      
+
       h2 {
         font-size: $h2_font_size_mobile;
       }

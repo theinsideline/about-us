@@ -6,7 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && git add . && git add dist/js dist/css -f"
+    "format": "prettier ./src --write",
+    "predeploy": "npm run format && npm run build",
+    "deploy": "git add . && git add dist/js dist/css -f"
   },
   "dependencies": {
     "core-js": "^3.8.3",

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { PUBLIC_DOMAIN } from '@/constants';
+import { PUBLIC_DOMAIN } from "@/constants";
 import JoinOurTeamCard from "@/components/the-join-our-team/join-our-team-card.vue";
 
 const cards = ref([
