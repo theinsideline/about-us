@@ -108,6 +108,7 @@ defineProps({
   &__description {
     height: 120px;
     display: flex;
+    margin-bottom: 30px;
 
     span {
       text-align: center;
@@ -162,7 +163,6 @@ defineProps({
   .join-our-team-card {
     display: inline-block;
     width: 470px;
-    padding-bottom: 0;
 
     &__icon {
       img {
