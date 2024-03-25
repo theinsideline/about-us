@@ -1,4 +1,4 @@
-//LOAD ABOUT US PAGE FROM GIT REPOSITORY
+//LOAD "ABOUT US" PAGE FROM GIT REPOSITORY
 const load = () => {
   const appElement = document.createElement("script");
   appElement.defer = true;
