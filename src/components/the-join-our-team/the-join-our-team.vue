@@ -110,6 +110,8 @@ const cards = ref([
     &__content {
       justify-content: center;
       align-items: center;
+      overflow: inherit;
+      width:100%
     }
   }
 }
@@ -119,6 +121,8 @@ const cards = ref([
     &__content {
       justify-content: center;
       align-items: center;
+      overflow: inherit;
+      width:100%
     }
   }
 }
