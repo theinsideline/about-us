@@ -23,6 +23,6 @@ export default {
 <style>
 #about_us {
   margin-left: auto;
-  margin-left: auto;
+  margin-right: auto;
 }
 </style>

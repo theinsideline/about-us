@@ -40,8 +40,9 @@ defineProps({
 </a>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/scss/fonts.scss";
+@import "@/assets/scss/breakpoints.scss";
 
 .community-card {
   display: flex;
@@ -85,5 +86,59 @@ defineProps({
     display: flex;
     justify-content: center;
   }
+}
+
+@include mobile {
+    .community-card {
+        height: 350px;
+
+        &__title {
+            h2 {
+                font-size: $h2_font_size_mobile;
+            }
+        }
+
+        &__description {
+            span {
+                font-size: $span_font_size_mobile;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .community-card {
+        height: 350px;
+
+        &__title {
+            h2 {
+                font-size: $h2_font_size_mobile;
+            }
+        }
+
+        &__description {
+            span {
+                font-size: $span_font_size_mobile;
+            }
+        }
+    }
+}
+
+@include laptop {
+    .community-card {
+        height: 350px;
+
+        &__title {
+            h2 {
+                font-size: $h2_font_size_mobile;
+            }
+        }
+
+        &__description {
+            span {
+                font-size: $span_font_size_mobile;
+            }
+        }
+    }
 }
 </style>

@@ -44,8 +44,9 @@ import CommunityCard from "@/components/the-serving-our-community/community-card
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/scss/fonts.scss";
+@import "@/assets/scss/breakpoints.scss";
 
 .the-serving-out-community {
   display: flex;
@@ -55,7 +56,7 @@ import CommunityCard from "@/components/the-serving-our-community/community-card
 
   &__title {
     h2 {
-      font-size: $h2_font_size;
+      font-size: $h2_font_size_title;
       font-family: Oswald;
       text-align: center;
     }
@@ -74,5 +75,35 @@ import CommunityCard from "@/components/the-serving-our-community/community-card
       }
     }
   }
+}
+
+@include mobile {
+    .the-serving-out-community {
+        &__title {
+            h2 {
+                font-size: $h2_font_size_mobile_title;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .the-serving-out-community {
+        &__title {
+            h2 {
+                font-size: $h2_font_size_tablet_title;
+            }
+        }
+    }
+}
+
+@include laptop {
+    .the-serving-out-community {
+        &__title {
+            h2 {
+                font-size: $h2_font_size_tablet_title;
+            }
+        }
+    }
 }
 </style>

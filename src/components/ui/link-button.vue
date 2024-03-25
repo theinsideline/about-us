@@ -17,8 +17,9 @@ defineProps({
   <a class="link-button" :href="link">{{ text }} <i>--></i></a>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/scss/fonts.scss";
+@import "@/assets/scss/breakpoints.scss";
 
 .link-button {
   cursor: pointer;
@@ -52,6 +53,24 @@ defineProps({
         right: -3px;
       }
     }
+  }
+}
+
+@include mobile {
+  .link-button {
+    font-size: $link_button_font_size_mobile;
+  }
+}
+
+@include tablet {
+  .link-button {
+    font-size: $link_button_font_size_mobile;
+  }
+}
+
+@include laptop {
+  .link-button {
+    font-size: $link_button_font_size_mobile;
   }
 }
 </style>

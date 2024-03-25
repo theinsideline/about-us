@@ -52,6 +52,7 @@ defineProps({
 
 <style lang="scss" scoped>
 @import "@/assets/scss/fonts.scss";
+@import "@/assets/scss/breakpoints.scss";
 
 .join-our-team-card {
   width: 460px;
@@ -65,6 +66,7 @@ defineProps({
   padding-bottom: 80px;
   text-decoration: none;
   color: black;
+  flex: none;
 
   &__icon {
     display: flex;
@@ -105,23 +107,128 @@ defineProps({
   }
 
   &__description {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 33px;
     height: 120px;
+    display: flex;
 
     span {
       text-align: center;
-      max-width: 400px;
       font-size: $span_font_size;
       font-family: Inter;
     }
   }
 
   &__button-link {
+    margin-top: auto;
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+
+@include mobile {
+  .join-our-team-card {
+    height: 420px;
+    width: 280px;
+    margin: 25px;
+
+    &__icon {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &__title {
+      h2 {
+        font-size: $h2_font_size_mobile;
+      }
+    }
+
+    &__subtitle {
+      span {
+        height: 60px;
+        font-size: $span_font_size_mobile;
+      }
+    }
+
+    &__description {
+      span {
+        height: 190px;
+        font-size: $span_font_size_mobile;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .join-our-team-card {
+    display: inline-block;
+    height: 480px;
+    width: 470px;
+    padding-bottom: 0;
+
+    &__icon {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &__title {
+      h2 {
+        font-size: $h2_font_size_mobile_title;
+      }
+    }
+
+    &__subtitle {
+      span {
+        height: 40px;
+        font-size: $span_font_size_mobile;
+      }
+    }
+
+    &__description {
+      height: 70px;
+
+      span {
+        font-size: $span_font_size_mobile;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .join-our-team-card {
+    height: 480px;
+    width: 470px;
+    padding-bottom: 0;
+
+    &__icon {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &__title {
+      h2 {
+        font-size: $h2_font_size_mobile;
+      }
+    }
+
+    &__subtitle {
+      height: 40px;
+      span {
+        font-size: $span_font_size_mobile;
+      }
+    }
+
+    &__description {
+      height: 70px;
+      span {
+        font-size: $span_font_size_mobile;
+      }
+    }
   }
 }
 </style>

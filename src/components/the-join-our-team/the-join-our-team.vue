@@ -15,7 +15,8 @@ const cards = ref([
   {
     icon: "https://theeinsideline.github.io/about-us/public/Icons_Flag.svg",
     title: "Ambassadors",
-    subTitle: "Grassroots racing?<wbr/> Local hero?<wbr/>Social media influencer?",
+    subTitle:
+      "Grassroots racing?<wbr/> Local hero?<wbr/>Social media influencer?",
     description:
       "Ride for us through our ambassador program. Get deals on bikes, components and apparel to keep your passion alive. Ride our brands!",
     buttonText: "Apply Now",
@@ -55,16 +56,12 @@ const cards = ref([
 
 <style lang="scss" scoped>
 @import "@/assets/scss/fonts.scss";
+@import "@/assets/scss/breakpoints.scss";
 
 .the-join-our-team {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   &__title {
     h2 {
-      font-size: $h2_font_size;
+      font-size: $h2_font_size_title;
       font-family: Oswald;
       text-align: center;
     }
@@ -73,6 +70,56 @@ const cards = ref([
   &__content {
     display: flex;
     flex-wrap: nowrap;
+    width: 100vw;
+    overflow: scroll;
+  }
+}
+
+@include mobile {
+  .the-join-our-team {
+    &__title {
+      h2 {
+        font-size: $h2_font_size_mobile_title;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .the-join-our-team {
+    &__title {
+      h2 {
+        font-size: $h2_font_size_tablet_title;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .the-join-our-team {
+    &__title {
+      h2 {
+        font-size: $h2_font_size_tablet_title;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .the-join-our-team {
+    &__content {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@include tv {
+  .the-join-our-team {
+    &__content {
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 </style>
