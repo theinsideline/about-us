@@ -70,7 +70,7 @@ const cards = ref([
   &__content {
     display: flex;
     flex-wrap: nowrap;
-    width: 100vw;
+    width: 100%;
     overflow: scroll;
   }
 }

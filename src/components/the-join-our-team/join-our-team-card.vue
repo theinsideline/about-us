@@ -56,7 +56,6 @@ defineProps({
 
 .join-our-team-card {
   width: 460px;
-  height: 687px;
   background: #f0f0f0;
   margin: 15px;
   padding: 30px;
@@ -127,7 +126,6 @@ defineProps({
 
 @include mobile {
   .join-our-team-card {
-    height: 420px;
     width: 280px;
     margin: 25px;
 
@@ -163,7 +161,6 @@ defineProps({
 @include tablet {
   .join-our-team-card {
     display: inline-block;
-    height: 480px;
     width: 470px;
     padding-bottom: 0;
 
@@ -199,7 +196,6 @@ defineProps({
 
 @include laptop {
   .join-our-team-card {
-    height: 480px;
     width: 470px;
     padding-bottom: 0;
 
