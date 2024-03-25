@@ -197,7 +197,6 @@ defineProps({
 @include laptop {
   .join-our-team-card {
     width: 470px;
-    padding-bottom: 0;
 
     &__icon {
       img {
