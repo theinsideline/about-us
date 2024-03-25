@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CommunityCard from "@/components/the-serving-our-community/community-card.vue";
+import { PUBLIC_DOMAIN } from "@/constants";
 </script>
 
 <template>
@@ -14,14 +15,14 @@ import CommunityCard from "@/components/the-serving-our-community/community-card
           description="Located in Calgary AB, we call the Rocky Mountains home. We have deep gratitude for our local trail"
           button-text="Find us"
           button-link="https://www.theinsideline.ca/service/location/"
-          image="https://theeinsideline.github.io/about-us/public/images/Home.jpg"
+          :image="`${PUBLIC_DOMAIN}/public/images/Home.jpg`"
         />
         <CommunityCard
           title="Keeping Your Bike Running"
           description="At The Inside Line, our goal is to make your bicycle perform to its full potential so you can have a great ride"
           button-text="Learn More"
           button-link="https://www.theinsideline.ca/service/service/"
-          image="https://theeinsideline.github.io/about-us/public/images/Service.jpg"
+          :image="`${PUBLIC_DOMAIN}/public/images/Service.jpg`"
         />
       </div>
       <div class="content__row">
@@ -30,14 +31,14 @@ import CommunityCard from "@/components/the-serving-our-community/community-card
           description="If we are not out there crafting our next line we are in the shop talking about the MMBTS trail"
           button-text="MMTBS Membership"
           button-link="https://www.mmbts.com/join-mmbts"
-          image="https://theeinsideline.github.io/about-us/public/images/Network.jpg"
+          :image="`${PUBLIC_DOMAIN}/public/images/Network.jpg`"
         />
         <CommunityCard
           title="Equality"
           description="We firmly believe that equity in sport is important. We strive to help women enjoy mountain biking"
           button-text="Learn More"
           button-link="https://www.slaydies.com/"
-          image="https://theeinsideline.github.io/about-us/public/images/Equality.jpg"
+          :image="`${PUBLIC_DOMAIN}/public/images/Equality.jpg`"
         />
       </div>
     </div>
@@ -78,32 +79,32 @@ import CommunityCard from "@/components/the-serving-our-community/community-card
 }
 
 @include mobile {
-    .the-serving-out-community {
-        &__title {
-            h2 {
-                font-size: $h2_font_size_mobile_title;
-            }
-        }
+  .the-serving-out-community {
+    &__title {
+      h2 {
+        font-size: $h2_font_size_mobile_title;
+      }
     }
+  }
 }
 
 @include tablet {
-    .the-serving-out-community {
-        &__title {
-            h2 {
-                font-size: $h2_font_size_tablet_title;
-            }
-        }
+  .the-serving-out-community {
+    &__title {
+      h2 {
+        font-size: $h2_font_size_tablet_title;
+      }
     }
+  }
 }
 
 @include laptop {
-    .the-serving-out-community {
-        &__title {
-            h2 {
-                font-size: $h2_font_size_tablet_title;
-            }
-        }
+  .the-serving-out-community {
+    &__title {
+      h2 {
+        font-size: $h2_font_size_tablet_title;
+      }
     }
+  }
 }
 </style>

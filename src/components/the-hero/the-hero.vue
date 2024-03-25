@@ -1,10 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { PUBLIC_DOMAIN } from '@/constants'
+</script>
 
 <template>
   <div class="the-hero">
     <img
       class="the-hero__background-image"
-      src="https://theeinsideline.github.io/about-us/public/images/Hero.png"
+      :src="`${PUBLIC_DOMAIN}/public/images/Hero.png`"
       alt="Hero"
     />
 
