@@ -39,7 +39,7 @@ defineProps({
       <h2>{{ title }}</h2>
     </div>
     <div class="join-our-team-card__subtitle">
-      <span v-html="subTitle" />
+      <span>{{ subTitle }}</span>
     </div>
     <div class="join-our-team-card__description">
       <span>{{ description }}</span>
@@ -100,7 +100,6 @@ defineProps({
       text-align: center;
       font-weight: bold;
       font-size: $span_font_size;
-      text-wrap: nowrap;
       font-family: Inter;
     }
   }

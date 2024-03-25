@@ -15,8 +15,7 @@ const cards = ref([
   {
     icon: "https://theeinsideline.github.io/about-us/public/Icons_Flag.svg",
     title: "Ambassadors",
-    subTitle:
-      "Grassroots racing?<wbr/> Local hero?<wbr/>Social media influencer?",
+    subTitle: "Grassroots racing?  Local hero? Social media influencer?",
     description:
       "Ride for us through our ambassador program. Get deals on bikes, components and apparel to keep your passion alive. Ride our brands!",
     buttonText: "Apply Now",
@@ -25,7 +24,7 @@ const cards = ref([
   {
     icon: "https://theeinsideline.github.io/about-us/public/Icons_Community.svg",
     title: "Affiliates",
-    subTitle: "Producing content?<wbr/>Strong media presence?",
+    subTitle: "Producing content? Strong media presence?",
     description:
       "Link to your favourite products in your videos, photos and written content and make commission",
     buttonText: "Apply Now",
@@ -111,7 +110,7 @@ const cards = ref([
       justify-content: center;
       align-items: center;
       overflow: inherit;
-      width:100%
+      width: 100%;
     }
   }
 }
@@ -122,7 +121,7 @@ const cards = ref([
       justify-content: center;
       align-items: center;
       overflow: inherit;
-      width:100%
+      width: 100%;
     }
   }
 }
