@@ -4,7 +4,7 @@
   <div class="the-hero">
     <img
       class="the-hero__background-image"
-      src="https://theeinsideline.github.io/about-us/public/hero.png"
+      src="https://theeinsideline.github.io/about-us/public/images/Hero.png"
       alt="Hero"
     />
 
