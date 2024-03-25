@@ -6,7 +6,7 @@ const cards = ref([
   {
     icon: "https://theeinsideline.github.io/about-us/public/Icons_Flame.svg",
     title: "Careers",
-    subTitle: "Passions for bikes?<wbr/>Want to work in the industry?",
+    subTitle: "Passions for bikes? Want to work in the industry?",
     description:
       "Hang out with us every day with a carrier at The Inside Line. Bring your passion to the workplace",
     buttonText: "Careers",
