@@ -30,7 +30,7 @@
 @import "@/assets/scss/breakpoints.scss";
 
 .the-hero {
-  width: 10vw;
+  width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
 
