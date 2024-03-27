@@ -125,7 +125,7 @@ defineProps({
 
 @include mobile {
   .join-our-team-card {
-    width: calc(100vw - 20px);
+    width: calc(100vw - 2 * var(--component-padding));
 
     &__icon {
       img {
