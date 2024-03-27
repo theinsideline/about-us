@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import { PUBLIC_DOMAIN } from "@/constants";
+
+const scroll = () => {
+  const communityElement = document.getElementById("community");
+  if (!communityElement) return;
+
+  communityElement.scrollIntoView({ behavior: "smooth" });
+};
 </script>
 
 <template>
@@ -23,7 +30,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
       >
     </div>
 
-    <div class="the-hero__learn-more">
+    <div class="the-hero__learn-more" @click="scroll">
       <span>Learn More <i>↓</i></span>
     </div>
   </div>
@@ -80,10 +87,6 @@ import { PUBLIC_DOMAIN } from "@/constants";
     z-index: 1;
     cursor: pointer;
 
-    &:hover {
-      color: blue;
-    }
-
     span {
       color: white;
       font-family: Inter;
@@ -91,10 +94,6 @@ import { PUBLIC_DOMAIN } from "@/constants";
       cursor: pointer;
       display: block;
       transition: all 0.3s ease-in;
-
-      &:hover {
-        transform: scale(1.2, 1.2);
-      }
 
       i {
         animation: MoveUpDown 1s linear infinite;

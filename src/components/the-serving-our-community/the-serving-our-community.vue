@@ -4,7 +4,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 </script>
 
 <template>
-  <div class="the-serving-out-community">
+  <div class="the-serving-out-community" id="community">
     <div class="the-serving-out-community__title">
       <h2>Serving Our Community</h2>
     </div>
