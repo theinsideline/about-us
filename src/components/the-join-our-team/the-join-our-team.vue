@@ -82,6 +82,16 @@ const cards = ref([
         font-size: $h2_font_size_mobile_title;
       }
     }
+
+    &__content {
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
