@@ -129,6 +129,7 @@ defineProps({
     max-height: 420px;
     padding-top: 30px;
     margin-top: 0;
+    padding-bottom: 60px;
 
     &__icon {
       margin: 0;
