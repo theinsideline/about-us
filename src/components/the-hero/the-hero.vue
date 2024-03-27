@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import { PUBLIC_DOMAIN } from "@/constants";
+
+// import { PUBLIC_DOMAIN } from "@/constants";
 </script>
 
 <template>
   <div class="the-hero">
-    <img
+    <video
       class="the-hero__background-image"
-      :src="`${PUBLIC_DOMAIN}/public/images/Hero.png`"
-      alt="Hero"
+      :src="`${PUBLIC_DOMAIN}/public/videos/Hero.mp4`"
+      autoplay
+      muted
     />
 
     <div class="the-hero__title">
@@ -35,11 +38,11 @@ import { PUBLIC_DOMAIN } from "@/constants";
   width: 100vw;
   position: relative;
   left: calc(-50vw + 50%);
+  max-height: 768px;
 
   &__background-image {
     width: 100vw;
-    height: auto;
-    min-height: 520px;
+    max-height: 768px;
     filter: brightness(50%);
     z-index: 999;
     object-fit: cover;
