@@ -128,6 +128,7 @@ defineProps({
     width: calc(100vw - 2 * var(--component-padding));
     max-height: 420px;
     padding-top: 30px;
+    margin-top: 0;
 
     &__icon {
       margin: 0;
