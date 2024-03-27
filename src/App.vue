@@ -1,3 +1,24 @@
+<script setup lang="ts">
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const headerElement = document.querySelector("h1.margin-bottom-sm");
+  if (!headerElement) return;
+
+  const header = (headerElement.textContent || "").toLowerCase();
+  if (!header.length) return;
+
+  if (!header.includes("about us")) return;
+
+  headerElement.remove();
+
+  const section = document.querySelector("section.section-control.container");
+  if (!section) return;
+
+  section.computedStyleMap.apply({ paddingTop: 0 });
+});
+</script>
+
 <template>
   <div>
     <TheHero />
