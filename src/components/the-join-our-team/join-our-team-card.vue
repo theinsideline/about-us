@@ -65,6 +65,7 @@ defineProps({
   text-decoration: none;
   color: black;
   flex: none;
+  margin-top: 0 !important;
 
   &__icon {
     display: flex;
@@ -127,8 +128,7 @@ defineProps({
   .join-our-team-card {
     width: calc(100vw - 2 * var(--component-padding));
     max-height: 420px;
-    padding-top: 30px;
-    margin-top: 0;
+    padding-top: 20px;
     padding-bottom: 60px;
 
     &__icon {
@@ -136,8 +136,8 @@ defineProps({
       margin-bottom: 15px;
 
       img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
       }
     }
 
@@ -165,7 +165,7 @@ defineProps({
       margin-bottom: 15px;
 
       span {
-        height: 190px;
+        height: 100px;
         font-size: $span_font_size_mobile;
       }
     }

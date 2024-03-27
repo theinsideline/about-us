@@ -18,7 +18,7 @@ const cards = ref([
     title: "Ambassadors",
     subTitle: "Grassroots racing?  Local hero? Social media influencer?",
     description:
-      "Ride for us through our ambassador program. Get deals on bikes, components and apparel to keep your passion alive. Ride our brands!",
+      "Ride for us through our ambassador program. Get deals on bikes, components and apparel to keep your passion alive.",
     buttonText: "Apply Now",
     buttonLink: "",
   },
