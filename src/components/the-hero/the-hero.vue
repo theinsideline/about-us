@@ -122,7 +122,6 @@ const scroll = () => {
 @include mobile {
   .the-hero {
     min-height: 520px;
-    width: auto;
 
     &__background-image {
       min-height: 520px;
