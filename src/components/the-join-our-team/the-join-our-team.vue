@@ -79,6 +79,8 @@ const cards = ref([
 @include mobile {
   .the-join-our-team {
     &__title {
+      margin-bottom: 15px;
+
       h2 {
         font-size: $h2_font_size_mobile_title;
       }
