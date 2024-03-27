@@ -20,11 +20,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <TheHero />
-    <TheServingOurCommunity />
-    <TheJoinOurTeam />
-  </div>
+  <TheHero />
+  <TheServingOurCommunity />
+  <TheJoinOurTeam />
 </template>
 
 <script lang="ts">
