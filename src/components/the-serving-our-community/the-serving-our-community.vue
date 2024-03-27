@@ -50,6 +50,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 @import "@/assets/scss/breakpoints.scss";
 
 .the-serving-out-community {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
