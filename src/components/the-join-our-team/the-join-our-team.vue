@@ -42,6 +42,7 @@ const cards = ref([
     <div class="the-join-our-team__content">
       <JoinOurTeamCard
         v-for="(card, key) of cards"
+        class="card"
         :key="key"
         :icon="card.icon"
         :title="card.title"
@@ -84,12 +85,16 @@ const cards = ref([
     }
 
     &__content {
-      &:first-child {
-        margin-left: 0;
-      }
+      .card {
+        margin: 10px;
 
-      &:last-child {
-        margin-right: 0;
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }

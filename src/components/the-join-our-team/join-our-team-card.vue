@@ -57,7 +57,6 @@ defineProps({
 .join-our-team-card {
   width: 460px;
   background: #f0f0f0;
-  margin: 15px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -127,7 +126,6 @@ defineProps({
 @include mobile {
   .join-our-team-card {
     width: 280px;
-    margin: 25px;
 
     &__icon {
       img {
