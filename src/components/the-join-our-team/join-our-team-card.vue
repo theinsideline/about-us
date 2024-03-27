@@ -140,12 +140,18 @@ defineProps({
     }
 
     &__title {
+      margin: 0;
+      margin-bottom: 15px;
+
       h2 {
         font-size: $h2_font_size_mobile;
       }
     }
 
     &__subtitle {
+      margin: 0;
+      margin-bottom: 11px;
+
       span {
         height: 60px;
         font-size: $span_font_size_mobile;
@@ -153,6 +159,9 @@ defineProps({
     }
 
     &__description {
+      margin: 0;
+      margin-bottom: 15px;
+
       span {
         height: 190px;
         font-size: $span_font_size_mobile;
