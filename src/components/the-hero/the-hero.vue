@@ -11,6 +11,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
       :src="`${PUBLIC_DOMAIN}/public/videos/Hero.mp4`"
       autoplay
       muted
+      loop
     />
 
     <div class="the-hero__title">
