@@ -5,12 +5,20 @@ const scroll = () => {
   const communityElement = document.getElementById("community");
   if (!communityElement) return;
 
-  communityElement.scrollIntoView({ behavior: "smooth" });
+  const heroElement = document.getElementById("hero");
+  if (!heroElement) return;
+
+  // const yOffset = -10;
+  // const y =
+  //   heroElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  // window.scrollTo({ top: y, behavior: "smooth" });
+  communityElement.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 </script>
 
 <template>
-  <div class="the-hero">
+  <div class="the-hero" id="hero">
     <video
       class="the-hero__background-image"
       :src="`${PUBLIC_DOMAIN}/public/videos/Hero.mp4`"
