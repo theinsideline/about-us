@@ -52,7 +52,6 @@ defineProps({
   display: flex;
   flex-direction: column;
   padding: 30px;
-  margin: 15px;
   height: 470px;
   justify-content: flex-end;
   background-position: top;
