@@ -15,7 +15,7 @@ onMounted(() => {
   const section = document.querySelector("section.section-control.container");
   if (!section) return;
 
-  section.style.paddingTop = 0;
+  section.classList.add("padding-top-null");
 });
 </script>
 
@@ -42,6 +42,10 @@ export default {
 </script>
 
 <style>
+.padding-top-null {
+  padding-top: 0 !important;
+}
+
 #about_us {
   margin-left: auto;
   margin-right: auto;
