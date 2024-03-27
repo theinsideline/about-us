@@ -127,8 +127,12 @@ defineProps({
   .join-our-team-card {
     width: calc(100vw - 2 * var(--component-padding));
     max-height: 420px;
+    padding-top: 30px;
 
     &__icon {
+      margin: 0;
+      margin-bottom: 15px;
+
       img {
         width: 80px;
         height: 80px;
