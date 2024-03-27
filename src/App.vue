@@ -15,7 +15,7 @@ onMounted(() => {
   const section = document.querySelector("section.section-control.container");
   if (!section) return;
 
-  section.computedStyleMap.apply({ paddingTop: 0 });
+  section.style.paddingTop = 0;
 });
 </script>
 
