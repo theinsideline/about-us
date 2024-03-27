@@ -8,11 +8,6 @@ const scroll = () => {
   const heroElement = document.getElementById("hero");
   if (!heroElement) return;
 
-  // const yOffset = -10;
-  // const y =
-  //   heroElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-  // window.scrollTo({ top: y, behavior: "smooth" });
   communityElement.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 </script>
@@ -126,6 +121,13 @@ const scroll = () => {
 
 @include mobile {
   .the-hero {
+    min-height: 520px;
+    width: auto;
+
+    &__background-image {
+      min-height: 520px;
+    }
+
     &__title {
       width: 90%;
 
@@ -148,6 +150,12 @@ const scroll = () => {
 
 @include tablet {
   .the-hero {
+    min-height: 620px;
+
+    &__background-image {
+      min-height: 620px;
+    }
+
     &__title {
       width: 80%;
 
@@ -170,6 +178,12 @@ const scroll = () => {
 
 @include laptop {
   .the-hero {
+    min-height: 620px;
+
+    &__background-image {
+      min-height: 620px;
+    }
+
     &__title {
       width: 70%;
 
