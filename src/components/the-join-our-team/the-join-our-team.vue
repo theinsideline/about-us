@@ -164,11 +164,28 @@ const cards = ref([
 
 @include desktop {
   .the-join-our-team {
+    &__title {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: $h2_font_size_tablet_title;
+      }
+    }
+
     &__content {
-      justify-content: center;
-      align-items: center;
-      overflow: inherit;
-      width: 100%;
+      margin: 0;
+
+      .card {
+        &:first-child {
+          margin-left: 0;
+          margin-right: 20px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          margin-left: 20px;
+        }
+      }
     }
   }
 }

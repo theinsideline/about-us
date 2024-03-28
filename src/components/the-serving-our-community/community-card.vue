@@ -157,4 +157,29 @@ defineProps({
     }
   }
 }
+
+@include desktop {
+  .community-card {
+    height: 350px;
+    padding: 20px;
+    max-width: calc(((100vw - 2 * var(--component-padding)) / 2) - 20px);
+    margin-bottom: 20px;
+
+    &__title {
+      margin-bottom: 10px;
+
+      h2 {
+        font-size: $h2_font_size_mobile;
+      }
+    }
+
+    &__description {
+      margin-bottom: 15px;
+
+      span {
+        font-size: $span_font_size_mobile;
+      }
+    }
+  }
+}
 </style>

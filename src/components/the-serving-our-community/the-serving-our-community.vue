@@ -138,4 +138,30 @@ import { PUBLIC_DOMAIN } from "@/constants";
     }
   }
 }
+
+@include desktop {
+  .the-serving-out-community {
+    &__title {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: $h2_font_size_tablet_title;
+      }
+    }
+
+    &__content {
+      .content__row {
+        .card {
+          &:first-child {
+            margin-right: 10px !important;
+          }
+
+          &:last-child {
+            margin-left: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}
 </style>
