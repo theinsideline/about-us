@@ -47,13 +47,15 @@ const autoScroll = () => {
     isSliding.value = true;
 
     const slides = Array.from(sliderElement.value.children);
-    console.log(slides);
+
     if (currentIndex.value === 0) next.value = true;
-    if (currentIndex.value === slides.length) next.value = false;
+    if (currentIndex.value === slides.length - 1) next.value = false;
 
     const currentSlide = slides[currentIndex.value];
 
     const slideWidth = currentSlide.getBoundingClientRect().x;
+
+    console.log(currentSlide, slideWidth);
 
     sliderElement.value.scroll({ left: slideWidth, behavior: "smooth" });
 
