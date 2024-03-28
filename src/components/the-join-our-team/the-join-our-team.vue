@@ -49,9 +49,6 @@ const autoScroll = () => {
     if (currentIndex.value === 0) next.value = true;
     if (currentIndex.value === cards.value.length) next.value = false;
 
-    if (next.value) currentIndex.value += 1;
-    else currentIndex.value -= 1;
-
     const slides = Array.from(sliderElement.value.children);
 
     const currentSlide = slides[currentIndex.value];
@@ -59,6 +56,9 @@ const autoScroll = () => {
     const slideWidth = currentSlide.getBoundingClientRect().x;
 
     sliderElement.value?.scroll({ left: slideWidth, behavior: "smooth" });
+
+    if (next.value) currentIndex.value += 1;
+    else currentIndex.value -= 1;
 
     isSliding.value = false;
   }, 4000);
