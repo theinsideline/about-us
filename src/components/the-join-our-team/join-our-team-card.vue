@@ -36,7 +36,7 @@ defineProps({
       <img :src="icon" alt="Join out ream icon" />
     </div>
     <div class="join-our-team-card__title heading_3">
-      <h2>{{ title }}</h2>
+      <h3>{{ title }}</h3>
     </div>
     <div class="join-our-team-card__subtitle">
       <span>{{ subTitle }}</span>
