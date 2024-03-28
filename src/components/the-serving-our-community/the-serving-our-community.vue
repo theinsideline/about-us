@@ -116,8 +116,25 @@ import { PUBLIC_DOMAIN } from "@/constants";
 @include laptop {
   .the-serving-out-community {
     &__title {
+      margin-bottom: 20px;
+
       h2 {
         font-size: $h2_font_size_tablet_title;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      .content__row {
+        &:first-child {
+          margin-right: 10px;
+        }
+
+        &:last-child {
+          margin-left: 10px;
+        }
       }
     }
   }
