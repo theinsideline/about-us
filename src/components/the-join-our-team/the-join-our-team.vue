@@ -66,10 +66,6 @@ const cards = ref([
     flex-wrap: nowrap;
     width: 100%;
     overflow: scroll;
-
-    &::-webkit-scrollbar-thumb {
-      height: 2px !important;
-    }
   }
 }
 

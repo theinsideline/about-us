@@ -32,8 +32,8 @@ defineProps({
     :href="buttonLink"
     :style="{ 'background-image': `url(${image})` }"
   >
-    <div class="community-card__title">
-      <h2>{{ title }}</h2>
+    <div class="community-card__title heading_3">
+      <h3>{{ title }}</h3>
     </div>
     <div class="community-card__description">
       <span>{{ description }}</span>
@@ -47,6 +47,7 @@ defineProps({
 <style lang="scss" scoped>
 @import "@/assets/scss/fonts.scss";
 @import "@/assets/scss/breakpoints.scss";
+@import "@/assets/scss/headings.scss";
 
 .community-card {
   display: flex;
