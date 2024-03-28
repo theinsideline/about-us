@@ -38,10 +38,10 @@ defineProps({
     <div class="join-our-team-card__title heading_3">
       <h3>{{ title }}</h3>
     </div>
-    <div class="join-our-team-card__subtitle">
+    <div class="join-our-team-card__subtitle paragraph">
       <span>{{ subTitle }}</span>
     </div>
-    <div class="join-our-team-card__description">
+    <div class="join-our-team-card__description paragraph">
       <span>{{ description }}</span>
     </div>
     <div class="join-our-team-card__button-link">
@@ -54,6 +54,7 @@ defineProps({
 @import "@/assets/scss/fonts.scss";
 @import "@/assets/scss/breakpoints.scss";
 @import "@/assets/scss/headings.scss";
+@import "@/assets/scss/paragraph.scss";
 
 .join-our-team-card {
   width: 460px;
@@ -81,28 +82,12 @@ defineProps({
   }
 
   &__subtitle {
-    margin-bottom: 33px;
     display: flex;
     justify-content: center;
 
     span {
       max-width: 400px;
-      text-align: center;
       font-weight: bold;
-      font-size: $span_font_size;
-      font-family: Inter;
-    }
-  }
-
-  &__description {
-    height: 120px;
-    display: flex;
-    margin-bottom: 30px;
-
-    span {
-      text-align: center;
-      font-size: $span_font_size;
-      font-family: Inter;
     }
   }
 
@@ -132,22 +117,18 @@ defineProps({
     }
 
     &__subtitle {
-      margin: 0;
       margin-bottom: 11px;
 
       span {
         height: 60px;
-        font-size: $span_font_size_mobile;
       }
     }
 
     &__description {
-      margin: 0;
       margin-bottom: 15px;
 
       span {
         height: 100px;
-        font-size: $span_font_size_mobile;
       }
     }
   }
@@ -174,23 +155,18 @@ defineProps({
     }
 
     &__subtitle {
-      margin: 0;
       margin-bottom: 11px;
 
       span {
         height: 46px;
-        font-size: $span_font_size_mobile;
       }
     }
 
     &__description {
-      margin: 0;
       margin-bottom: 20px;
-      height: 70px;
 
       span {
         height: 70px;
-        font-size: $span_font_size_mobile;
       }
     }
   }
@@ -217,23 +193,19 @@ defineProps({
     }
 
     &__subtitle {
-      margin: 0;
       margin-bottom: 11px;
 
       span {
         height: 46px;
-        font-size: $span_font_size_mobile;
       }
     }
 
     &__description {
       margin: 0;
       margin-bottom: 20px;
-      height: 70px;
 
       span {
         height: 70px;
-        font-size: $span_font_size_mobile;
       }
     }
   }
@@ -260,23 +232,18 @@ defineProps({
     }
 
     &__subtitle {
-      margin: 0;
       margin-bottom: 11px;
 
       span {
         height: 46px;
-        font-size: $span_font_size_mobile;
       }
     }
 
     &__description {
-      margin: 0;
       margin-bottom: 20px;
-      height: 70px;
 
       span {
         height: 70px;
-        font-size: $span_font_size_mobile;
       }
     }
   }
@@ -304,23 +271,18 @@ defineProps({
     }
 
     &__subtitle {
-      margin: 0;
       margin-bottom: 22px;
 
       span {
         height: 84px;
-        font-size: $span_font_size;
       }
     }
 
     &__description {
-      margin: 0;
       margin-bottom: 30px;
-      height: 140px;
 
       span {
         height: 140px;
-        font-size: $span_font_size;
       }
     }
   }
