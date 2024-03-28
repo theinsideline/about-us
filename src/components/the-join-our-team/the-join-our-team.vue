@@ -62,6 +62,7 @@ const cards = ref([
 .the-join-our-team {
   &__title {
     h2 {
+      margin-top: 0;
       font-size: $h2_font_size_title;
       font-family: Oswald;
       text-align: center;
@@ -82,6 +83,8 @@ const cards = ref([
 
 @include mobile {
   .the-join-our-team {
+    margin-top: 35px;
+
     &__title {
       margin-bottom: 15px;
 
@@ -108,6 +111,8 @@ const cards = ref([
 
 @include tablet {
   .the-join-our-team {
+    margin-top: 45px;
+
     &__title {
       margin-bottom: 20px;
 
@@ -136,6 +141,8 @@ const cards = ref([
 
 @include laptop {
   .the-join-our-team {
+    margin-top: 45px;
+
     &__title {
       margin-bottom: 20px;
 
@@ -164,6 +171,8 @@ const cards = ref([
 
 @include desktop {
   .the-join-our-team {
+    margin-top: 45px;
+
     &__title {
       margin-bottom: 20px;
 
