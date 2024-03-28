@@ -55,7 +55,7 @@ const autoScroll = () => {
 
     const slideWidth = currentSlide.getBoundingClientRect().x;
 
-    console.log(currentSlide, currentSlide.getBoundingClientRect().x);
+    console.log(currentSlide, currentSlide.getBoundingClientRect());
 
     sliderElement.value.scroll({ left: slideWidth, behavior: "smooth" });
 
