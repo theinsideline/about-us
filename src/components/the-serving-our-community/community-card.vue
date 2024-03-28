@@ -111,7 +111,7 @@ defineProps({
 
 @include tablet {
   .community-card {
-    height: 350px;
+    height: 364px;
     width: 100%;
 
     &__title {

@@ -104,7 +104,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
     }
 
     &__content {
-      .content_row {
+      .content__row {
         .card {
           margin-bottom: 20px;
         }
