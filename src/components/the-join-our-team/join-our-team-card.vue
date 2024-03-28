@@ -212,6 +212,7 @@ defineProps({
     &__description {
       margin: 0;
       margin-bottom: 20px;
+      height: 70px;
 
       span {
         height: 70px;
