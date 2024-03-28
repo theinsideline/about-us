@@ -109,7 +109,7 @@ const cards = ref([
 @include tablet {
   .the-join-our-team {
     &__title {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
 
       h2 {
         font-size: $h2_font_size_tablet_title;
@@ -117,9 +117,9 @@ const cards = ref([
     }
 
     &__content {
-      .card {
-        margin: 10px;
+      margin: 0;
 
+      .card {
         &:first-child {
           margin-left: 0;
           margin-right: 20px;
