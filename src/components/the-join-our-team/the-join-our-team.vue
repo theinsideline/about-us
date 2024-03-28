@@ -116,7 +116,8 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 35px;
 
-    .desktop {
+    .desktop,
+    .tablet {
       display: none;
     }
 
@@ -138,6 +139,10 @@ const cards = ref([
 
     &__content {
       margin: 0;
+
+      .carousel__slide--prev {
+        display: none;
+      }
 
       .card {
         &:first-child {
