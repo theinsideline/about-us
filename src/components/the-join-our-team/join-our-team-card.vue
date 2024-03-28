@@ -91,6 +91,10 @@ defineProps({
     }
   }
 
+  &__description {
+    display: flex;
+  }
+
   &__button-link {
     margin-top: auto;
     width: 100%;
