@@ -125,12 +125,14 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
     &__content {
       .content__row {
-        &:first-child {
-          margin-right: 10px !important;
-        }
+        .card {
+          &:first-child {
+            margin-right: 10px !important;
+          }
 
-        &:last-child {
-          margin-left: 10px !important;
+          &:last-child {
+            margin-left: 10px !important;
+          }
         }
       }
     }
