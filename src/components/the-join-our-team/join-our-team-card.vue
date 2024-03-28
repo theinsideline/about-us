@@ -375,7 +375,7 @@ defineProps({
 
       span {
         height: 140px;
-        font-size: $span_font_size_mobile;
+        font-size: $span_font_size;
       }
     }
   }
