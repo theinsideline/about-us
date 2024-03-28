@@ -135,7 +135,7 @@ const cards = ref([
 
 @include desktop {
   .the-join-our-team {
-    margin-top: 45px;
+    margin-top: 25px;
 
     &__content {
       margin: 0;
@@ -157,7 +157,7 @@ const cards = ref([
 
 @include tv {
   .the-join-our-team {
-    margin-top: 65px;
+    margin-top: 35px;
 
     &__content {
       margin: 0;
