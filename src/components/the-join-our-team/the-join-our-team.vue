@@ -53,7 +53,10 @@ const autoScroll = () => {
 
     const currentSlide = slides[currentIndex.value];
 
-    currentSlide.scrollIntoView({ behavior: "smooth" });
+    currentSlide.scrollBy({
+      left: currentSlide.clientWidth,
+      behavior: "smooth",
+    });
 
     if (next.value) {
       currentIndex.value += 1;
