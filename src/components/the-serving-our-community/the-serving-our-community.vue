@@ -62,6 +62,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
   &__title {
     h2 {
+      margin-top: 0;
       font-size: $h2_font_size_title;
       font-family: Oswald;
       text-align: center;
@@ -85,6 +86,8 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
 @include mobile {
   .the-serving-out-community {
+    margin-top: 35px;
+
     &__title {
       h2 {
         font-size: $h2_font_size_mobile_title;
@@ -95,6 +98,8 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
 @include tablet {
   .the-serving-out-community {
+    margin-top: 45px;
+
     &__title {
       margin-bottom: 20px;
 
@@ -115,6 +120,8 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
 @include laptop {
   .the-serving-out-community {
+    margin-top: 45px;
+
     &__title {
       margin-bottom: 20px;
 
@@ -141,6 +148,8 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
 @include desktop {
   .the-serving-out-community {
+    margin-top: 45px;
+
     &__title {
       margin-bottom: 20px;
 
@@ -167,7 +176,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
 @include tv {
   .the-serving-out-community {
-    margin-top: 45px;
+    margin-top: 65px;
     display: flex;
     flex-direction: column;
     justify-content: center;
