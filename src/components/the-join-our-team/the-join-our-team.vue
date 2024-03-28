@@ -113,7 +113,7 @@ const cards = ref([
 
 @include laptop {
   .the-join-our-team {
-    margin-top: 45px;
+    margin-top: 25px;
 
     &__content {
       margin: 0;
