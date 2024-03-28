@@ -334,50 +334,50 @@ defineProps({
     width: calc(((100vw - 2 * var(--component-padding)) / 3) - 60px);
     max-width: 460px;
     height: 687px;
-    // padding-top: 40px;
-    // padding-left: 40px;
-    // padding-right: 40px;
-    // padding-bottom: 80px;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 120px;
 
-    // &__icon {
-    //   margin: 0;
-    //   margin-bottom: 20px;
+    &__icon {
+      margin: 0;
+      margin-bottom: 30px;
 
-    //   img {
-    //     width: 80px;
-    //     height: 80px;
-    //   }
-    // }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
 
-    // &__title {
-    //   margin: 0;
-    //   margin-bottom: 20px;
+    &__title {
+      margin: 0;
+      margin-bottom: 30px;
 
-    //   h2 {
-    //     font-size: $h2_font_size_mobile_title;
-    //   }
-    // }
+      h2 {
+        font-size: $h2_font_size_title;
+      }
+    }
 
-    // &__subtitle {
-    //   margin: 0;
-    //   margin-bottom: 11px;
+    &__subtitle {
+      margin: 0;
+      margin-bottom: 22px;
 
-    //   span {
-    //     height: 46px;
-    //     font-size: $span_font_size_mobile;
-    //   }
-    // }
+      span {
+        height: 84px;
+        font-size: $span_font_size;
+      }
+    }
 
-    // &__description {
-    //   margin: 0;
-    //   margin-bottom: 20px;
-    //   height: 70px;
+    &__description {
+      margin: 0;
+      margin-bottom: 30px;
+      height: 140px;
 
-    //   span {
-    //     height: 70px;
-    //     font-size: $span_font_size_mobile;
-    //   }
-    // }
+      span {
+        height: 140px;
+        font-size: $span_font_size_mobile;
+      }
+    }
   }
 }
 </style>
