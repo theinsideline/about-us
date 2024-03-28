@@ -93,6 +93,7 @@ defineProps({
 
 @include mobile {
   .community-card {
+    padding: 20px;
     height: 350px;
 
     &__title {
