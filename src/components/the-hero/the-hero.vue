@@ -1,5 +1,14 @@
 <script setup lang="ts">
+import { ref, onMounted } from "vue";
 import { PUBLIC_DOMAIN } from "@/constants";
+
+const videoRef = ref<HTMLVideoElement>();
+
+onMounted(() => {
+  if (!videoRef.value) return;
+
+  videoRef.value.setAttribute("muted", true as unknown as string);
+});
 
 const scroll = () => {
   const communityElement = document.getElementById("community");
@@ -15,11 +24,13 @@ const scroll = () => {
 <template>
   <div class="the-hero" id="hero">
     <video
+      ref="videoRef"
+      playsinline
+      muted
+      autoplay
+      loop
       class="the-hero__background-image"
       :src="`${PUBLIC_DOMAIN}/public/videos/Hero.mp4`"
-      autoplay
-      muted
-      loop
     />
 
     <div class="the-hero__title">

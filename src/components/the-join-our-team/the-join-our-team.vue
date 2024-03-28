@@ -73,6 +73,10 @@ const cards = ref([
     flex-wrap: nowrap;
     width: 100%;
     overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: inline;
+    }
   }
 }
 
