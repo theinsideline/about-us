@@ -127,14 +127,12 @@ import { PUBLIC_DOMAIN } from "@/constants";
       display: flex;
       flex-direction: column;
 
-      .content__row {
-        &:first-child {
-          margin-right: 10px;
-        }
+      .content__row:first-child {
+        margin-right: 10px;
+      }
 
-        &:last-child {
-          margin-left: 10px;
-        }
+      .content__row:last-child {
+        margin-left: 10px;
       }
     }
   }
