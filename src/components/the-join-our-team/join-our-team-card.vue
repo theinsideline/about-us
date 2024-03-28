@@ -226,9 +226,18 @@ defineProps({
 
 @include laptop {
   .join-our-team-card {
-    width: 470px;
+    display: inline-block;
+    width: 479px;
+    height: 471px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 80px;
 
     &__icon {
+      margin: 0;
+      margin-bottom: 20px;
+
       img {
         width: 80px;
         height: 80px;
@@ -236,21 +245,31 @@ defineProps({
     }
 
     &__title {
+      margin: 0;
+      margin-bottom: 20px;
+
       h2 {
-        font-size: $h2_font_size_mobile;
+        font-size: $h2_font_size_mobile_title;
       }
     }
 
     &__subtitle {
-      height: 40px;
+      margin: 0;
+      margin-bottom: 11px;
+
       span {
+        height: 46px;
         font-size: $span_font_size_mobile;
       }
     }
 
     &__description {
+      margin: 0;
+      margin-bottom: 20px;
       height: 70px;
+
       span {
+        height: 70px;
         font-size: $span_font_size_mobile;
       }
     }

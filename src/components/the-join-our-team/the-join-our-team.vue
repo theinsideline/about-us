@@ -137,8 +137,26 @@ const cards = ref([
 @include laptop {
   .the-join-our-team {
     &__title {
+      margin-bottom: 20px;
+
       h2 {
         font-size: $h2_font_size_tablet_title;
+      }
+    }
+
+    &__content {
+      margin: 0;
+
+      .card {
+        &:first-child {
+          margin-left: 0;
+          margin-right: 20px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          margin-left: 20px;
+        }
       }
     }
   }
