@@ -85,6 +85,12 @@ const cards = ref([
     width: 100%;
     overflow: scroll;
   }
+
+  .mobile {
+    .card::before {
+      display: none;
+    }
+  }
 }
 
 @include mobile {
