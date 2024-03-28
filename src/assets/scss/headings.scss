@@ -6,7 +6,7 @@
     margin-top: 0;
     font-family: Oswald;
     text-align: center;
-    font-size: var(--font-heading);
+    font-size: var(--text-xxl, 2.074em);
   }
 }
 
@@ -15,63 +15,40 @@
     margin-top: 0;
     font-family: Oswald;
     text-align: center;
+    font-size: var(--text-lg, 1.44em);
   }
 }
 
 @include mobile {
   .heading_2 {
     margin-bottom: 15px;
-
-    h2 {
-      //   font-size: $h2_font_size_mobile_title;
-    }
   }
 
   .heading_3 {
     margin-bottom: 7px;
-
-    h3 {
-      font-size: $h2_font_size_mobile;
-    }
   }
 }
 
 @include tablet {
   .heading_2 {
     margin-bottom: 20px;
-
-    h2 {
-      //   font-size: $h2_font_size_tablet_title;
-    }
   }
 }
 
 @include laptop {
   .heading_2 {
     margin-bottom: 20px;
-
-    h2 {
-      //   font-size: $h2_font_size_tablet_title;
-    }
   }
 }
 
 @include desktop {
   .heading_2 {
     margin-bottom: 20px;
-
-    h2 {
-      //   font-size: $h2_font_size_tablet_title;
-    }
   }
 }
 
 @include tv {
   .heading_2 {
     margin-bottom: 30px;
-
-    h2 {
-      //   font-size: $h2_font_size_title;
-    }
   }
 }
