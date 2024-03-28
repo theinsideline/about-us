@@ -54,7 +54,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 @import "@/assets/scss/breakpoints.scss";
 
 .the-serving-out-community {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,7 +167,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
 @include tv {
   .the-serving-out-community {
-    margin-top: 65px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
