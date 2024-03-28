@@ -102,7 +102,8 @@ const cards = ref([
     overflow: scroll;
   }
 
-  .mobile + .tablet {
+  .mobile,
+  .tablet {
     .card::before {
       display: none;
     }
@@ -155,7 +156,8 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 25px;
 
-    .desktop + .mobile {
+    .desktop,
+    .mobile {
       display: none;
     }
 
@@ -181,7 +183,8 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 25px;
 
-    .desktop + .mobile {
+    .desktop,
+    .mobile {
       display: none;
     }
 
@@ -207,7 +210,8 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 35px;
 
-    .mobile + .tablet {
+    .mobile,
+    .tablet {
       display: none;
     }
 
