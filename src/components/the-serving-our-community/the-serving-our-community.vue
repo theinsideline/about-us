@@ -11,6 +11,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
     <div class="the-serving-out-community__content">
       <div class="content__row">
         <CommunityCard
+          class="card"
           title="Home"
           description="Located in Calgary AB, we call the Rocky Mountains home. We have deep gratitude for our local trail"
           button-text="Find us"
@@ -18,6 +19,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
           :image="`${PUBLIC_DOMAIN}/public/images/Home.jpg`"
         />
         <CommunityCard
+          class="card"
           title="Keeping Your Bike Running"
           description="At The Inside Line, our goal is to make your bicycle perform to its full potential so you can have a great ride"
           button-text="Learn More"
@@ -27,6 +29,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
       </div>
       <div class="content__row">
         <CommunityCard
+          class="card"
           title="Supporting Local Networks"
           description="If we are not out there crafting our next line we are in the shop talking about the MMBTS trail"
           button-text="MMTBS Membership"
@@ -35,6 +38,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
         />
         <CommunityCard
           title="Equality"
+          class="card"
           description="We firmly believe that equity in sport is important. We strive to help women enjoy mountain biking"
           button-text="Learn More"
           button-link="https://www.slaydies.com/"
@@ -92,8 +96,18 @@ import { PUBLIC_DOMAIN } from "@/constants";
 @include tablet {
   .the-serving-out-community {
     &__title {
+      margin-bottom: 20px;
+
       h2 {
         font-size: $h2_font_size_tablet_title;
+      }
+    }
+
+    &__content {
+      .content_row {
+        .card {
+          margin-bottom: 20px;
+        }
       }
     }
   }
