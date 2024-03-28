@@ -54,11 +54,7 @@ const cards = ref([
         :button-link="card.buttonLink"
       />
     </div>
-    <Carousel
-      wrap-around
-      :autoplay="4000"
-      class="the-join-our-team__content mobile"
-    >
+    <Carousel :autoplay="4000" class="the-join-our-team__content mobile">
       <Slide v-for="(card, key) of cards" :key="key" class="card">
         <JoinOurTeamCard
           :icon="card.icon"
