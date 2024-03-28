@@ -56,6 +56,22 @@ const cards = ref([
     </div>
     <Carousel
       :autoplay="4000"
+      class="the-join-our-team__content tablet"
+      wrap-around
+    >
+      <Slide v-for="(card, key) of cards" :key="key" class="card">
+        <JoinOurTeamCard
+          :icon="card.icon"
+          :title="card.title"
+          :subTitle="card.subTitle"
+          :description="card.description"
+          :button-text="card.buttonText"
+          :button-link="card.buttonLink"
+        />
+      </Slide>
+    </Carousel>
+    <Carousel
+      :autoplay="4000"
       class="the-join-our-team__content mobile"
       wrap-around
     >
@@ -86,7 +102,7 @@ const cards = ref([
     overflow: scroll;
   }
 
-  .mobile {
+  .mobile + .tablet {
     .card::before {
       display: none;
     }
@@ -104,15 +120,6 @@ const cards = ref([
     &__content {
       .card {
         margin: 0;
-        // margin: 10px;
-
-        // &:first-child {
-        //   margin-left: 0;
-        // }
-
-        // &:last-child {
-        //   margin-right: 0;
-        // }
       }
     }
   }
@@ -122,7 +129,7 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 45px;
 
-    .desktop {
+    .desktop + .mobile {
       display: none;
     }
 
@@ -148,7 +155,7 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 25px;
 
-    .desktop {
+    .desktop + .mobile {
       display: none;
     }
 
@@ -174,7 +181,7 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 25px;
 
-    .desktop {
+    .desktop + .mobile {
       display: none;
     }
 
@@ -200,7 +207,7 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 35px;
 
-    .mobile {
+    .mobile + .tablet {
       display: none;
     }
 
