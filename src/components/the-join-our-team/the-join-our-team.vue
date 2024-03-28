@@ -36,7 +36,7 @@ const cards = ref([
 
 <template>
   <div class="the-join-our-team">
-    <div class="the-join-our-team__title">
+    <div class="the-join-our-team__title heading_2">
       <h2>Join Our Team</h2>
     </div>
     <div class="the-join-our-team__content">
@@ -58,17 +58,9 @@ const cards = ref([
 <style lang="scss" scoped>
 @import "@/assets/scss/fonts.scss";
 @import "@/assets/scss/breakpoints.scss";
+@import "@/assets/scss/headings.scss";
 
 .the-join-our-team {
-  &__title {
-    h2 {
-      margin-top: 0;
-      font-size: $h2_font_size_title;
-      font-family: Oswald;
-      text-align: center;
-    }
-  }
-
   &__content {
     display: flex;
     flex-wrap: nowrap;
@@ -84,14 +76,6 @@ const cards = ref([
 @include mobile {
   .the-join-our-team {
     margin-top: 35px;
-
-    &__title {
-      margin-bottom: 15px;
-
-      h2 {
-        font-size: $h2_font_size_mobile_title;
-      }
-    }
 
     &__content {
       .card {
@@ -112,14 +96,6 @@ const cards = ref([
 @include tablet {
   .the-join-our-team {
     margin-top: 45px;
-
-    &__title {
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: $h2_font_size_tablet_title;
-      }
-    }
 
     &__content {
       margin: 0;
@@ -143,14 +119,6 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 45px;
 
-    &__title {
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: $h2_font_size_tablet_title;
-      }
-    }
-
     &__content {
       margin: 0;
 
@@ -172,14 +140,6 @@ const cards = ref([
 @include desktop {
   .the-join-our-team {
     margin-top: 45px;
-
-    &__title {
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: $h2_font_size_tablet_title;
-      }
-    }
 
     &__content {
       margin: 0;
@@ -203,23 +163,12 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 65px;
 
-    &__title {
-      margin-bottom: 30px;
-
-      h2 {
-        font-size: $h2_font_size_title;
-      }
-    }
-
     &__content {
+      margin: 0;
       justify-content: center;
       align-items: center;
       overflow: inherit;
       width: 100%;
-    }
-
-    &__content {
-      margin: 0;
 
       .card {
         &:first-child {

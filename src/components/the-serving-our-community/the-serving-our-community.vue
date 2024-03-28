@@ -4,11 +4,11 @@ import { PUBLIC_DOMAIN } from "@/constants";
 </script>
 
 <template>
-  <div class="the-serving-out-community">
-    <div class="the-serving-out-community__title heading_2">
+  <div class="the-serving-our-community">
+    <div class="the-serving-our-community__title heading_2">
       <h2 id="community">Serving Our Community</h2>
     </div>
-    <div class="the-serving-out-community__content">
+    <div class="the-serving-our-community__content">
       <div class="content__row">
         <CommunityCard
           class="card"
@@ -54,7 +54,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 @import "@/assets/scss/breakpoints.scss";
 @import "@/assets/scss/headings.scss";
 
-.the-serving-out-community {
+.the-serving-our-community {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -77,13 +77,13 @@ import { PUBLIC_DOMAIN } from "@/constants";
 }
 
 @include mobile {
-  .the-serving-out-community {
+  .the-serving-our-community {
     margin-top: 35px;
   }
 }
 
 @include tablet {
-  .the-serving-out-community {
+  .the-serving-our-community {
     margin-top: 45px;
 
     &__content {
@@ -97,7 +97,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 }
 
 @include laptop {
-  .the-serving-out-community {
+  .the-serving-our-community {
     margin-top: 45px;
 
     &__content {
@@ -117,7 +117,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 }
 
 @include desktop {
-  .the-serving-out-community {
+  .the-serving-our-community {
     margin-top: 45px;
 
     &__content {
@@ -137,7 +137,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 }
 
 @include tv {
-  .the-serving-out-community {
+  .the-serving-our-community {
     margin-top: 65px;
     display: flex;
     flex-direction: column;
