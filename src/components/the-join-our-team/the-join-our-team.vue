@@ -74,8 +74,8 @@ const cards = ref([
     width: 100%;
     overflow: scroll;
 
-    &::-webkit-scrollbar {
-      display: inline;
+    &::-webkit-scrollbar-thumb {
+      height: 2px !important;
     }
   }
 }
