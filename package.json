@@ -14,6 +14,7 @@
     "core-js": "^3.8.3",
     "typescript": "^5.4.3",
     "vue": "^3.2.13",
+    "vue-carousel": "^0.18.0",
     "vue-class-component": "^8.0.0-0"
   },
   "devDependencies": {
@@ -45,9 +46,7 @@
     "parserOptions": {
       "parser": "@typescript-eslint/parser"
     },
-    "rules": {
-
-    }
+    "rules": {}
   },
   "browserslist": [
     "> 1%",

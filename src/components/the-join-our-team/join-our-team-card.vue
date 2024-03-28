@@ -105,7 +105,7 @@ defineProps({
 
 @include mobile {
   .join-our-team-card {
-    width: calc(100vw - 2 * var(--component-padding));
+    // width: calc(100vw - 2 * var(--component-padding));
     max-height: 420px;
     padding-top: 20px;
     padding-bottom: 60px;

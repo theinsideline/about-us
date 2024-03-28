@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 import { PUBLIC_DOMAIN } from "@/constants";
 import JoinOurTeamCard from "@/components/the-join-our-team/join-our-team-card.vue";
 
@@ -32,6 +32,39 @@ const cards = ref([
     buttonLink: "",
   },
 ]);
+
+const needAutoSlide = ref(true);
+const currentIndex = ref(0);
+const next = ref(true);
+const sliderElement = ref<HTMLDivElement>();
+const isSliding = ref(false);
+
+const autoScroll = () => {
+  setInterval(() => {
+    if (!needAutoSlide.value) return;
+
+    isSliding.value = true;
+    const slideWidth =
+      (sliderElement.value?.firstElementChild?.clientWidth || 0) *
+      currentIndex.value;
+
+    sliderElement.value?.scroll({ left: slideWidth, behavior: "smooth" });
+
+    if (currentIndex.value === 0) next.value = true;
+    if (currentIndex.value === cards.value.length - 1) next.value = false;
+
+    if (next.value) currentIndex.value += 1;
+    else currentIndex.value -= 1;
+
+    isSliding.value = false;
+  }, 4000);
+};
+
+const scrolling = () => {
+  needAutoSlide.value = false;
+};
+
+onMounted(() => autoScroll());
 </script>
 
 <template>
@@ -39,11 +72,15 @@ const cards = ref([
     <div class="the-join-our-team__title heading_2">
       <h2>Join Our Team</h2>
     </div>
-    <div class="the-join-our-team__content">
+    <div
+      class="the-join-our-team__content"
+      ref="sliderElement"
+      @touchstart="scrolling"
+    >
       <JoinOurTeamCard
         v-for="(card, key) of cards"
-        class="card"
         :key="key"
+        class="card"
         :icon="card.icon"
         :title="card.title"
         :subTitle="card.subTitle"
