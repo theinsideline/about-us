@@ -42,11 +42,15 @@ const isSliding = ref(false);
 const autoScroll = () => {
   setInterval(() => {
     if (!needAutoSlide.value) return;
+    if (!sliderElement.value) return;
 
     isSliding.value = true;
-    const slideWidth =
-      (sliderElement.value?.firstElementChild?.clientWidth || 0) *
-      currentIndex.value;
+
+    const slides = Array.from(sliderElement.value?.children!);
+
+    const currentSlide = slides[currentIndex.value];
+    console.log(currentSlide.getBoundingClientRect());
+    const slideWidth = currentSlide.getBoundingClientRect().x;
 
     sliderElement.value?.scroll({ left: slideWidth, behavior: "smooth" });
 
