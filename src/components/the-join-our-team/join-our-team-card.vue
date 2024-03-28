@@ -327,4 +327,57 @@ defineProps({
     }
   }
 }
+
+@include tv {
+  .join-our-team-card {
+    display: inline-block;
+    width: calc(((100vw - 2 * var(--component-padding)) / 3) - 60px);
+    max-width: 460px;
+    height: 687px;
+    // padding-top: 40px;
+    // padding-left: 40px;
+    // padding-right: 40px;
+    // padding-bottom: 80px;
+
+    // &__icon {
+    //   margin: 0;
+    //   margin-bottom: 20px;
+
+    //   img {
+    //     width: 80px;
+    //     height: 80px;
+    //   }
+    // }
+
+    // &__title {
+    //   margin: 0;
+    //   margin-bottom: 20px;
+
+    //   h2 {
+    //     font-size: $h2_font_size_mobile_title;
+    //   }
+    // }
+
+    // &__subtitle {
+    //   margin: 0;
+    //   margin-bottom: 11px;
+
+    //   span {
+    //     height: 46px;
+    //     font-size: $span_font_size_mobile;
+    //   }
+    // }
+
+    // &__description {
+    //   margin: 0;
+    //   margin-bottom: 20px;
+    //   height: 70px;
+
+    //   span {
+    //     height: 70px;
+    //     font-size: $span_font_size_mobile;
+    //   }
+    // }
+  }
+}
 </style>
