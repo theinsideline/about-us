@@ -73,4 +73,10 @@ defineProps({
     font-size: $link_button_font_size_mobile;
   }
 }
+
+@include desktop {
+  .link-button {
+    font-size: $link_button_font_size_mobile;
+  }
+}
 </style>

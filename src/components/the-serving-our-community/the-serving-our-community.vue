@@ -164,4 +164,46 @@ import { PUBLIC_DOMAIN } from "@/constants";
     }
   }
 }
+
+@include tv {
+  .the-serving-out-community {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+      margin-bottom: 30px;
+
+      h2 {
+        font-size: $h2_font_size_title;
+        font-family: Oswald;
+        text-align: center;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      .content__row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .card {
+          &:first-child {
+            margin-right: 15px !important;
+          }
+
+          &:last-child {
+            margin-left: 15px !important;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

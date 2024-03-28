@@ -182,4 +182,29 @@ defineProps({
     }
   }
 }
+
+@include tv {
+  .community-card {
+    height: 470px;
+    padding: 40px;
+    width: 705px;
+    margin-bottom: 30px;
+
+    &__title {
+      margin-bottom: 15px;
+
+      h2 {
+        font-size: $h2_font_size_mobile;
+      }
+    }
+
+    &__description {
+      margin-bottom: 30px;
+
+      span {
+        font-size: $span_font_size_mobile;
+      }
+    }
+  }
+}
 </style>
