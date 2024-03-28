@@ -35,7 +35,7 @@ defineProps({
     <div class="community-card__title heading_3">
       <h3>{{ title }}</h3>
     </div>
-    <div class="community-card__description">
+    <div class="community-card__description paragraph">
       <span>{{ description }}</span>
     </div>
     <div class="community-card__button">
@@ -48,6 +48,7 @@ defineProps({
 @import "@/assets/scss/fonts.scss";
 @import "@/assets/scss/breakpoints.scss";
 @import "@/assets/scss/headings.scss";
+@import "@/assets/scss/paragraph.scss";
 
 .community-card {
   display: flex;
@@ -62,19 +63,19 @@ defineProps({
   text-decoration: none;
   color: black;
 
-  &__description {
-    max-width: 625px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    cursor: default;
+  // &__description {
+  //   max-width: 625px;
+  //   display: flex;
+  //   justify-content: center;
+  //   margin-bottom: 30px;
+  //   cursor: default;
 
-    span {
-      font-size: $span_font_size;
-      font-family: Inter;
-      text-align: center;
-    }
-  }
+  //   span {
+  //     font-size: $span_font_size;
+  //     font-family: Inter;
+  //     text-align: center;
+  //   }
+  // }
 
   &__button {
     display: flex;
@@ -86,12 +87,6 @@ defineProps({
   .community-card {
     padding: 20px;
     height: 350px;
-
-    &__description {
-      span {
-        font-size: $span_font_size_mobile;
-      }
-    }
   }
 }
 
@@ -100,14 +95,6 @@ defineProps({
     height: 364px;
     width: 100%;
     padding: 20px;
-
-    &__description {
-      margin-bottom: 20px;
-
-      span {
-        font-size: $span_font_size_mobile;
-      }
-    }
   }
 }
 
@@ -117,14 +104,6 @@ defineProps({
     padding: 20px;
     max-width: calc(((100vw - 2 * var(--component-padding)) / 2) - 20px);
     margin-bottom: 20px;
-
-    &__description {
-      margin-bottom: 15px;
-
-      span {
-        font-size: $span_font_size_mobile;
-      }
-    }
   }
 }
 
@@ -134,14 +113,6 @@ defineProps({
     padding: 20px;
     max-width: calc(((100vw - 2 * var(--component-padding)) / 2) - 20px);
     margin-bottom: 20px;
-
-    &__description {
-      margin-bottom: 15px;
-
-      span {
-        font-size: $span_font_size_mobile;
-      }
-    }
   }
 }
 
@@ -152,14 +123,6 @@ defineProps({
     width: calc(((100vw - 2 * var(--component-padding)) / 2) - 30px);
     max-width: 705px;
     margin-bottom: 30px;
-
-    &__description {
-      margin-bottom: 30px;
-
-      span {
-        font-size: $span_font_size;
-      }
-    }
   }
 }
 </style>

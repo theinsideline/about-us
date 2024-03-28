@@ -1,0 +1,60 @@
+@import "./breakpoints.scss";
+@import "./fonts.scss";
+
+.paragraph {
+  span {
+    font-size: $span_font_size;
+    font-family: Inter;
+    text-align: center;
+  }
+}
+
+@include mobile {
+  .paragraph {
+    margin-bottom: 15px;
+
+    span {
+      font-size: $span_font_size_mobile;
+    }
+  }
+}
+
+@include tablet {
+  .paragraph {
+    margin-bottom: 20px;
+
+    span {
+      font-size: $span_font_size_mobile;
+    }
+  }
+}
+
+@include laptop {
+  .paragraph {
+    margin-bottom: 20px;
+
+    span {
+      font-size: $span_font_size_mobile;
+    }
+  }
+}
+
+@include desktop {
+  .paragraph {
+    margin-bottom: 20px;
+
+    span {
+      font-size: $span_font_size_mobile;
+    }
+  }
+}
+
+@include tv {
+  .paragraph {
+    margin-bottom: 30px;
+
+    span {
+      font-size: $span_font_size;
+    }
+  }
+}
