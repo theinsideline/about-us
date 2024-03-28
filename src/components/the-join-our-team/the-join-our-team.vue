@@ -192,6 +192,16 @@ const cards = ref([
 
 @include tv {
   .the-join-our-team {
+    margin-top: 65px;
+
+    &__title {
+      margin-bottom: 30px;
+
+      h2 {
+        font-size: $h2_font_size_title;
+      }
+    }
+
     &__content {
       justify-content: center;
       align-items: center;
