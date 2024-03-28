@@ -41,7 +41,7 @@ const cards = ref([
     <div class="the-join-our-team__title heading_2">
       <h2>Join Our Team</h2>
     </div>
-    <div class="the-join-our-team__content desktop" ref="sliderElement">
+    <div class="the-join-our-team__content desktop">
       <JoinOurTeamCard
         v-for="(card, key) of cards"
         :key="key"
@@ -55,9 +55,9 @@ const cards = ref([
       />
     </div>
     <Carousel
-      class="the-join-our-team__content mobile"
-      ref="sliderElement"
+      wrap-around
       :autoplay="4000"
+      class="the-join-our-team__content mobile"
     >
       <Slide v-for="(card, key) of cards" :key="key" class="card">
         <JoinOurTeamCard
