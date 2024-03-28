@@ -47,7 +47,7 @@ const autoScroll = () => {
     isSliding.value = true;
 
     if (currentIndex.value === 0) next.value = true;
-    if (currentIndex.value === cards.value.length) next.value = false;
+    if (currentIndex.value === cards.value.length - 1) next.value = false;
 
     const slides = Array.from(sliderElement.value.children);
 
