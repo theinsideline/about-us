@@ -62,16 +62,6 @@ defineProps({
   text-decoration: none;
   color: black;
 
-  &__title {
-    text-align: center;
-
-    h2 {
-      font-size: $h2_font_size;
-      font-family: Oswald;
-      text-align: center;
-    }
-  }
-
   &__description {
     max-width: 625px;
     display: flex;
@@ -97,12 +87,6 @@ defineProps({
     padding: 20px;
     height: 350px;
 
-    &__title {
-      h2 {
-        font-size: $h2_font_size_mobile;
-      }
-    }
-
     &__description {
       span {
         font-size: $span_font_size_mobile;
@@ -116,14 +100,6 @@ defineProps({
     height: 364px;
     width: 100%;
     padding: 20px;
-
-    &__title {
-      margin-bottom: 10px;
-
-      h2 {
-        font-size: $h2_font_size_mobile;
-      }
-    }
 
     &__description {
       margin-bottom: 20px;
@@ -142,14 +118,6 @@ defineProps({
     max-width: calc(((100vw - 2 * var(--component-padding)) / 2) - 20px);
     margin-bottom: 20px;
 
-    &__title {
-      margin-bottom: 10px;
-
-      h2 {
-        font-size: $h2_font_size_mobile;
-      }
-    }
-
     &__description {
       margin-bottom: 15px;
 
@@ -166,14 +134,6 @@ defineProps({
     padding: 20px;
     max-width: calc(((100vw - 2 * var(--component-padding)) / 2) - 20px);
     margin-bottom: 20px;
-
-    &__title {
-      margin-bottom: 10px;
-
-      h2 {
-        font-size: $h2_font_size_mobile;
-      }
-    }
 
     &__description {
       margin-bottom: 15px;
@@ -192,14 +152,6 @@ defineProps({
     width: calc(((100vw - 2 * var(--component-padding)) / 2) - 30px);
     max-width: 705px;
     margin-bottom: 30px;
-
-    &__title {
-      margin-bottom: 15px;
-
-      h2 {
-        font-size: $h2_font_size;
-      }
-    }
 
     &__description {
       margin-bottom: 30px;

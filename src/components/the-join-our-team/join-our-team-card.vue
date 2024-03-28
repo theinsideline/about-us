@@ -35,7 +35,7 @@ defineProps({
     <div class="join-our-team-card__icon">
       <img :src="icon" alt="Join out ream icon" />
     </div>
-    <div class="join-our-team-card__title">
+    <div class="join-our-team-card__title heading_3">
       <h2>{{ title }}</h2>
     </div>
     <div class="join-our-team-card__subtitle">
@@ -53,6 +53,7 @@ defineProps({
 <style lang="scss" scoped>
 @import "@/assets/scss/fonts.scss";
 @import "@/assets/scss/breakpoints.scss";
+@import "@/assets/scss/headings.scss";
 
 .join-our-team-card {
   width: 460px;
@@ -76,17 +77,6 @@ defineProps({
     img {
       width: 100px;
       height: 100px;
-    }
-  }
-
-  &__title {
-    margin-bottom: 33px;
-
-    h2 {
-      text-align: center;
-      font-size: $h2_font_size;
-      font-family: Oswald;
-      margin: 0;
     }
   }
 
@@ -141,15 +131,6 @@ defineProps({
       }
     }
 
-    &__title {
-      margin: 0;
-      margin-bottom: 15px;
-
-      h2 {
-        font-size: $h2_font_size_mobile;
-      }
-    }
-
     &__subtitle {
       margin: 0;
       margin-bottom: 11px;
@@ -189,15 +170,6 @@ defineProps({
       img {
         width: 80px;
         height: 80px;
-      }
-    }
-
-    &__title {
-      margin: 0;
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: $h2_font_size_mobile_title;
       }
     }
 
@@ -244,15 +216,6 @@ defineProps({
       }
     }
 
-    &__title {
-      margin: 0;
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: $h2_font_size_mobile_title;
-      }
-    }
-
     &__subtitle {
       margin: 0;
       margin-bottom: 11px;
@@ -293,15 +256,6 @@ defineProps({
       img {
         width: 80px;
         height: 80px;
-      }
-    }
-
-    &__title {
-      margin: 0;
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: $h2_font_size_mobile_title;
       }
     }
 
@@ -346,15 +300,6 @@ defineProps({
       img {
         width: 100px;
         height: 100px;
-      }
-    }
-
-    &__title {
-      margin: 0;
-      margin-bottom: 30px;
-
-      h2 {
-        font-size: $h2_font_size_title;
       }
     }
 

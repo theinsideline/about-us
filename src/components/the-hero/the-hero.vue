@@ -33,8 +33,8 @@ const scroll = () => {
       :src="`${PUBLIC_DOMAIN}/public/videos/Hero.mp4`"
     />
 
-    <div class="the-hero__title">
-      <h2>We Are Mountain Bikers</h2>
+    <div class="the-hero__title heading_3">
+      <h3>We Are Mountain Bikers</h3>
       <span
         >Drooling over new technology, daydreaming about our next ride and
         wrenching on bikes. We only sell what we ride, and for that reason you
@@ -53,6 +53,7 @@ const scroll = () => {
 <style scoped lang="scss">
 @import "@/assets/scss/fonts.scss";
 @import "@/assets/scss/breakpoints.scss";
+@import "@/assets/scss/headings.scss";
 
 .the-hero {
   width: 100vw;
@@ -78,10 +79,7 @@ const scroll = () => {
     z-index: 1;
     cursor: default;
 
-    h2 {
-      text-align: center;
-      font-family: Oswald;
-      font-size: $h2_font_size;
+    h3 {
       color: white;
     }
 
@@ -141,10 +139,6 @@ const scroll = () => {
     &__title {
       width: 90%;
 
-      h2 {
-        font-size: $h2_font_size_mobile;
-      }
-
       span {
         font-size: $span_font_size_mobile;
       }
@@ -169,10 +163,6 @@ const scroll = () => {
     &__title {
       width: 80%;
 
-      h2 {
-        font-size: $h2_font_size_mobile;
-      }
-
       span {
         font-size: $span_font_size_mobile;
       }
@@ -196,10 +186,6 @@ const scroll = () => {
 
     &__title {
       width: 70%;
-
-      h2 {
-        font-size: $h2_font_size_mobile;
-      }
 
       span {
         font-size: $span_font_size_mobile;
