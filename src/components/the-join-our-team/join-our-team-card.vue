@@ -272,7 +272,7 @@ defineProps({
 @include tv {
   .join-our-team-card {
     display: inline-block;
-    width: calc(((100vw - 2 * var(--component-padding)) / 3) - 60px);
+    width: calc(((100vw - 2 * var(--component-padding)) / 3));
     max-width: 460px;
     height: 687px;
     padding-top: 60px;
