@@ -195,7 +195,7 @@ defineProps({
       margin-bottom: 15px;
 
       h2 {
-        font-size: $h2_font_size_mobile;
+        font-size: $h2_font_size;
       }
     }
 
@@ -203,7 +203,7 @@ defineProps({
       margin-bottom: 30px;
 
       span {
-        font-size: $span_font_size_mobile;
+        font-size: $span_font_size;
       }
     }
   }
