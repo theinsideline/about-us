@@ -5,7 +5,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
 <template>
   <div class="the-serving-out-community">
-    <div class="the-serving-out-community__title">
+    <div class="the-serving-out-community__title heading_2">
       <h2 id="community">Serving Our Community</h2>
     </div>
     <div class="the-serving-out-community__content">
@@ -52,6 +52,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
 <style lang="scss" scoped>
 @import "@/assets/scss/fonts.scss";
 @import "@/assets/scss/breakpoints.scss";
+@import "@/assets/scss/headings.scss";
 
 .the-serving-out-community {
   margin-top: 20px;
@@ -59,15 +60,6 @@ import { PUBLIC_DOMAIN } from "@/constants";
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  &__title {
-    h2 {
-      margin-top: 0;
-      font-size: $h2_font_size_title;
-      font-family: Oswald;
-      text-align: center;
-    }
-  }
 
   &__content {
     display: flex;
@@ -87,26 +79,12 @@ import { PUBLIC_DOMAIN } from "@/constants";
 @include mobile {
   .the-serving-out-community {
     margin-top: 35px;
-
-    &__title {
-      h2 {
-        font-size: $h2_font_size_mobile_title;
-      }
-    }
   }
 }
 
 @include tablet {
   .the-serving-out-community {
     margin-top: 45px;
-
-    &__title {
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: $h2_font_size_tablet_title;
-      }
-    }
 
     &__content {
       .content__row {
@@ -121,14 +99,6 @@ import { PUBLIC_DOMAIN } from "@/constants";
 @include laptop {
   .the-serving-out-community {
     margin-top: 45px;
-
-    &__title {
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: $h2_font_size_tablet_title;
-      }
-    }
 
     &__content {
       .content__row {
@@ -149,14 +119,6 @@ import { PUBLIC_DOMAIN } from "@/constants";
 @include desktop {
   .the-serving-out-community {
     margin-top: 45px;
-
-    &__title {
-      margin-bottom: 20px;
-
-      h2 {
-        font-size: $h2_font_size_tablet_title;
-      }
-    }
 
     &__content {
       .content__row {
@@ -181,16 +143,6 @@ import { PUBLIC_DOMAIN } from "@/constants";
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    &__title {
-      margin-bottom: 30px;
-
-      h2 {
-        font-size: $h2_font_size_title;
-        font-family: Oswald;
-        text-align: center;
-      }
-    }
 
     &__content {
       display: flex;

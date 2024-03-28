@@ -1,0 +1,60 @@
+@import "./breakpoints.scss";
+@import "./fonts.scss";
+
+.heading_2 {
+  h2 {
+    margin-top: 0;
+    font-family: Oswald;
+    text-align: center;
+  }
+}
+
+@include mobile {
+  .heading_2 {
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: $h2_font_size_mobile_title;
+    }
+  }
+}
+
+@include tablet {
+  .heading_2 {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: $h2_font_size_tablet_title;
+    }
+  }
+}
+
+@include laptop {
+  .heading_2 {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: $h2_font_size_tablet_title;
+    }
+  }
+}
+
+@include desktop {
+  .heading_2 {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: $h2_font_size_tablet_title;
+    }
+  }
+}
+
+@include tv {
+  .heading_2 {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: $h2_font_size_title;
+    }
+  }
+}
