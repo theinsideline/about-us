@@ -112,6 +112,7 @@ defineProps({
 @include tablet {
   .community-card {
     height: 350px;
+    max-width: calc(((100vw - 2 * var(--component-padding)) / 2) - 1em);
 
     &__title {
       h2 {
