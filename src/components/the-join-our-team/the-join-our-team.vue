@@ -58,6 +58,7 @@ const cards = ref([
       :autoplay="4000"
       class="the-join-our-team__content tablet"
       wrap-around
+      :items-to-show="2"
     >
       <Slide v-for="(card, key) of cards" :key="key" class="card">
         <JoinOurTeamCard
