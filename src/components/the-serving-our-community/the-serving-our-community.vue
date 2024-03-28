@@ -123,12 +123,16 @@ import { PUBLIC_DOMAIN } from "@/constants";
       }
     }
 
-    .content__row:first-child {
-      margin-right: 10px;
-    }
+    &__content {
+      .content__row {
+        &:first-child {
+          margin-right: 10px !important;
+        }
 
-    .content__row:last-child {
-      margin-left: 10px;
+        &:last-child {
+          margin-left: 10px !important;
+        }
+      }
     }
   }
 }
