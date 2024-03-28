@@ -175,9 +175,15 @@ defineProps({
 @include tablet {
   .join-our-team-card {
     display: inline-block;
-    width: 470px;
+    width: 479px;
+    height: 471px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 
     &__icon {
+      margin: 0;
+      margin-bottom: 20px;
+
       img {
         width: 80px;
         height: 80px;
@@ -185,22 +191,30 @@ defineProps({
     }
 
     &__title {
+      margin: 0;
+      margin-bottom: 20px;
+
       h2 {
         font-size: $h2_font_size_mobile_title;
       }
     }
 
     &__subtitle {
+      margin: 0;
+      margin-bottom: 11px;
+
       span {
-        height: 40px;
+        height: 46px;
         font-size: $span_font_size_mobile;
       }
     }
 
     &__description {
-      height: 70px;
+      margin: 0;
+      margin-bottom: 20px;
 
       span {
+        height: 70px;
         font-size: $span_font_size_mobile;
       }
     }

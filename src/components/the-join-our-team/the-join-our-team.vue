@@ -109,8 +109,26 @@ const cards = ref([
 @include tablet {
   .the-join-our-team {
     &__title {
+      margin-bottom: 15px;
+
       h2 {
         font-size: $h2_font_size_tablet_title;
+      }
+    }
+
+    &__content {
+      .card {
+        margin: 10px;
+
+        &:first-child {
+          margin-left: 0;
+          margin-right: 20px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          margin-left: 20px;
+        }
       }
     }
   }
