@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 import { PUBLIC_DOMAIN } from "@/constants";
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide } from "vue3-carousel";
 import JoinOurTeamCard from "@/components/the-join-our-team/join-our-team-card.vue";
 
 const cards = ref([
@@ -32,47 +34,6 @@ const cards = ref([
     buttonLink: "",
   },
 ]);
-
-const needAutoSlide = ref(true);
-const currentIndex = ref(0);
-const next = ref(true);
-const sliderElement = ref<HTMLDivElement>();
-const isSliding = ref(false);
-
-const autoScroll = () => {
-  setInterval(() => {
-    if (!needAutoSlide.value) return;
-    if (!sliderElement.value) return;
-
-    isSliding.value = true;
-
-    const slides = Array.from(sliderElement.value.children);
-
-    if (currentIndex.value === 0) next.value = true;
-    if (currentIndex.value === slides.length - 1) next.value = false;
-
-    const currentSlide = slides[currentIndex.value];
-
-    currentSlide.scrollBy({
-      left: currentSlide.clientWidth,
-      behavior: "smooth",
-    });
-
-    if (next.value) {
-      currentIndex.value += 1;
-    } else {
-      currentIndex.value -= 1;
-    }
-
-    isSliding.value = false;
-  }, 4000);
-};
-
-const scrolling = () => {
-  needAutoSlide.value = false;
-};
-
-onMounted(() => autoScroll());
 </script>
 
 <template>
@@ -80,11 +41,7 @@ onMounted(() => autoScroll());
     <div class="the-join-our-team__title heading_2">
       <h2>Join Our Team</h2>
     </div>
-    <div
-      class="the-join-our-team__content"
-      ref="sliderElement"
-      @touchstart="scrolling"
-    >
+    <div class="the-join-our-team__content desktop" ref="sliderElement">
       <JoinOurTeamCard
         v-for="(card, key) of cards"
         :key="key"
@@ -97,6 +54,22 @@ onMounted(() => autoScroll());
         :button-link="card.buttonLink"
       />
     </div>
+    <Carousel
+      class="the-join-our-team__content mobile"
+      ref="sliderElement"
+      :autoplay="4000"
+    >
+      <Slide v-for="(card, key) of cards" :key="key" class="card">
+        <JoinOurTeamCard
+          :icon="card.icon"
+          :title="card.title"
+          :subTitle="card.subTitle"
+          :description="card.description"
+          :button-text="card.buttonText"
+          :button-link="card.buttonLink"
+        />
+      </Slide>
+    </Carousel>
   </div>
 </template>
 
@@ -118,6 +91,10 @@ onMounted(() => autoScroll());
   .the-join-our-team {
     margin-top: 35px;
 
+    .desktop {
+      display: none;
+    }
+
     &__content {
       .card {
         margin: 10px;
@@ -137,6 +114,10 @@ onMounted(() => autoScroll());
 @include tablet {
   .the-join-our-team {
     margin-top: 45px;
+
+    .desktop {
+      display: none;
+    }
 
     &__content {
       margin: 0;
@@ -160,6 +141,10 @@ onMounted(() => autoScroll());
   .the-join-our-team {
     margin-top: 25px;
 
+    .desktop {
+      display: none;
+    }
+
     &__content {
       margin: 0;
 
@@ -182,6 +167,10 @@ onMounted(() => autoScroll());
   .the-join-our-team {
     margin-top: 25px;
 
+    .desktop {
+      display: none;
+    }
+
     &__content {
       margin: 0;
 
@@ -203,6 +192,10 @@ onMounted(() => autoScroll());
 @include tv {
   .the-join-our-team {
     margin-top: 35px;
+
+    .mobile {
+      display: none;
+    }
 
     &__content {
       margin: 0;
