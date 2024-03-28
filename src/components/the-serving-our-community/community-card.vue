@@ -136,7 +136,7 @@ defineProps({
 @include laptop {
   .community-card {
     height: 350px;
-    max-width: calc(((100vw - 2 * var(--component-padding)) / 2) - 1em);
+    max-width: calc(((100vw - 2 * var(--component-padding)) / 2) - 20px);
 
     &__title {
       h2 {
