@@ -113,14 +113,19 @@ defineProps({
   .community-card {
     height: 364px;
     width: 100%;
+    padding: 20px;
 
     &__title {
+      margin-bottom: 10px;
+
       h2 {
         font-size: $h2_font_size_mobile;
       }
     }
 
     &__description {
+      margin-bottom: 20px;
+
       span {
         font-size: $span_font_size_mobile;
       }
