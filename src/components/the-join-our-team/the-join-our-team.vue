@@ -46,19 +46,19 @@ const autoScroll = () => {
 
     isSliding.value = true;
 
-    const slides = Array.from(sliderElement.value?.children!);
-
-    const currentSlide = slides[currentIndex.value];
-    console.log(currentSlide.getBoundingClientRect());
-    const slideWidth = currentSlide.getBoundingClientRect().x;
-
-    sliderElement.value?.scroll({ left: slideWidth, behavior: "smooth" });
-
     if (currentIndex.value === 0) next.value = true;
     if (currentIndex.value === cards.value.length - 1) next.value = false;
 
     if (next.value) currentIndex.value += 1;
     else currentIndex.value -= 1;
+
+    const slides = Array.from(sliderElement.value.children);
+
+    const currentSlide = slides[currentIndex.value];
+
+    const slideWidth = currentSlide.getBoundingClientRect().x;
+
+    sliderElement.value?.scroll({ left: slideWidth, behavior: "smooth" });
 
     isSliding.value = false;
   }, 4000);
