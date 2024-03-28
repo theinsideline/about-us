@@ -59,6 +59,7 @@ const cards = ref([
       class="the-join-our-team__content tablet"
       wrap-around
       :items-to-show="2"
+      snap-align="start"
     >
       <Slide v-for="(card, key) of cards" :key="key" class="card">
         <JoinOurTeamCard
