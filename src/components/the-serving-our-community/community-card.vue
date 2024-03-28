@@ -63,20 +63,6 @@ defineProps({
   text-decoration: none;
   color: black;
 
-  // &__description {
-  //   max-width: 625px;
-  //   display: flex;
-  //   justify-content: center;
-  //   margin-bottom: 30px;
-  //   cursor: default;
-
-  //   span {
-  //     font-size: $span_font_size;
-  //     font-family: Inter;
-  //     text-align: center;
-  //   }
-  // }
-
   &__button {
     display: flex;
     justify-content: center;

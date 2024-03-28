@@ -33,7 +33,7 @@ const scroll = () => {
       :src="`${PUBLIC_DOMAIN}/public/videos/Hero.mp4`"
     />
 
-    <div class="the-hero__title heading_3">
+    <div class="the-hero__title heading_3 paragraph">
       <h3>We Are Mountain Bikers</h3>
       <span
         >Drooling over new technology, daydreaming about our next ride and
@@ -44,7 +44,7 @@ const scroll = () => {
       >
     </div>
 
-    <div class="the-hero__learn-more" @click="scroll">
+    <div class="the-hero__learn-more paragraph" @click="scroll">
       <span>Learn More <i>↓</i></span>
     </div>
   </div>
@@ -54,6 +54,7 @@ const scroll = () => {
 @import "@/assets/scss/fonts.scss";
 @import "@/assets/scss/breakpoints.scss";
 @import "@/assets/scss/headings.scss";
+@import "@/assets/scss/paragraph.scss";
 
 .the-hero {
   width: 100vw;
@@ -84,9 +85,6 @@ const scroll = () => {
     }
 
     span {
-      text-align: center;
-      font-family: Inter;
-      font-size: $span_font_size;
       color: white;
     }
   }
@@ -101,8 +99,6 @@ const scroll = () => {
 
     span {
       color: white;
-      font-family: Inter;
-      font-size: $span_font_size;
       cursor: pointer;
       display: block;
       transition: all 0.3s ease-in;
@@ -138,16 +134,6 @@ const scroll = () => {
 
     &__title {
       width: 90%;
-
-      span {
-        font-size: $span_font_size_mobile;
-      }
-    }
-
-    &__learn-more {
-      span {
-        font-size: $span_font_size_mobile;
-      }
     }
   }
 }
@@ -162,16 +148,6 @@ const scroll = () => {
 
     &__title {
       width: 80%;
-
-      span {
-        font-size: $span_font_size_mobile;
-      }
-    }
-
-    &__learn-more {
-      span {
-        font-size: $span_font_size_mobile;
-      }
     }
   }
 }
@@ -186,16 +162,6 @@ const scroll = () => {
 
     &__title {
       width: 70%;
-
-      span {
-        font-size: $span_font_size_mobile;
-      }
-    }
-
-    &__learn-more {
-      span {
-        font-size: $span_font_size_mobile;
-      }
     }
   }
 }
