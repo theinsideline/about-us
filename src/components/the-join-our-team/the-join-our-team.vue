@@ -198,6 +198,22 @@ const cards = ref([
       overflow: inherit;
       width: 100%;
     }
+
+    &__content {
+      margin: 0;
+
+      .card {
+        &:first-child {
+          margin-left: 0;
+          margin-right: 30px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          margin-left: 30px;
+        }
+      }
+    }
   }
 }
 </style>
