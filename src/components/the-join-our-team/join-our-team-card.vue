@@ -120,6 +120,10 @@ defineProps({
       }
     }
 
+    &__title {
+      margin-bottom: 15px;
+    }
+
     &__subtitle {
       margin-bottom: 11px;
 
@@ -158,6 +162,10 @@ defineProps({
       }
     }
 
+    &__title {
+      margin-bottom: 20px;
+    }
+
     &__subtitle {
       margin-bottom: 11px;
 
@@ -194,6 +202,10 @@ defineProps({
         width: 80px;
         height: 80px;
       }
+    }
+
+    &__title {
+      margin-bottom: 20px;
     }
 
     &__subtitle {
@@ -235,6 +247,10 @@ defineProps({
       }
     }
 
+    &__title {
+      margin-bottom: 20px;
+    }
+
     &__subtitle {
       margin-bottom: 11px;
 
@@ -272,6 +288,10 @@ defineProps({
         width: 100px;
         height: 100px;
       }
+    }
+
+    &__title {
+      margin-bottom: 30px;
     }
 
     &__subtitle {
