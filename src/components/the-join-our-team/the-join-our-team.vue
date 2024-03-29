@@ -99,8 +99,12 @@ const cards = ref([
 @import "@/assets/scss/headings.scss";
 
 ::v-deep {
-  .carousel__slide::before {
-    display: none;
+  .carousel__slide {
+    padding: 0 !important;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
