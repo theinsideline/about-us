@@ -144,8 +144,8 @@ defineProps({
 
 @include tablet {
   .join-our-team-card {
-    display: inline-block;
-    width: 479px;
+    display: flex;
+    width: 100%;
     height: 471px;
     padding-top: 40px;
     padding-left: 40px;
