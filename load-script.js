@@ -2,7 +2,7 @@
 const load = () => {
   const appElement = document.createElement("script");
   appElement.defer = true;
-  appElement.src = "https://theinsideline.github.io/about-us/dist/js/app.js";
+  appElement.src = "https://theinsideline.github.io/about-us/dist/js/index.js";
 
   const chunkElement = document.createElement("script");
   chunkElement.defer = true;
@@ -12,7 +12,7 @@ const load = () => {
   const styleElement = document.createElement("link");
   styleElement.rel = "stylesheet";
   styleElement.href =
-    "https://theinsideline.github.io/about-us/dist/css/app.css";
+    "https://theinsideline.github.io/about-us/dist/css/index.css";
 
   document.head.append(appElement);
   document.head.append(chunkElement);
