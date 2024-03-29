@@ -57,7 +57,6 @@ const cards = ref([
 
     <Carousel
       wrap-around
-      snap-align="start"
       :items-to-show="2"
       class="the-join-our-team__content tablet"
     >
