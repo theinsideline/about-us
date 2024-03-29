@@ -131,6 +131,11 @@ const cards = ref([
   }
 
   &__swipe-to-see-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+
     span {
       font-family: Inter;
       font-size: 12px;
