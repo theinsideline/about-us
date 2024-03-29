@@ -271,9 +271,10 @@ defineProps({
 
 @include tv {
   .join-our-team-card {
-    display: inline-block;
-    width: 460px;
-    max-width: calc((100vw / 3) - 60px);
+    display: inline-flex;
+    flex-shrink: inherit;
+    width: 100%;
+    max-width: 460px;
     height: 687px;
     padding-top: 60px;
     padding-left: 30px;
