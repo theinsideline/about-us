@@ -135,13 +135,11 @@ const cards = ref([
     margin-top: 45px;
 
     .desktop,
-    .mobile {
+    .tablet {
       display: none;
     }
 
     &__content {
-      margin: 0;
-
       .card {
         margin: 0;
       }
