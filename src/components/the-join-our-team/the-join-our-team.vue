@@ -98,7 +98,7 @@ const cards = ref([
 @import "@/assets/scss/breakpoints.scss";
 @import "@/assets/scss/headings.scss";
 
-v-deep {
+::v-deep {
   .carousel__slide::before {
     display: none;
   }
