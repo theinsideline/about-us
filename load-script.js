@@ -1,18 +1,24 @@
 //LOAD "ABOUT US" PAGE FROM GIT REPOSITORY
-const load = () => {
-  const appElement = document.createElement("script");
-  appElement.defer = true;
-  appElement.src = "https://theinsideline.github.io/about-us/dist/js/index.js";
+const createScriptElement = (url) => {
+  const scriptElement = document.createElement("script");
+  scriptElement.defer = true;
+  scriptElement.src = url;
 
-  const chunkElement = document.createElement("script");
-  chunkElement.defer = true;
-  chunkElement.src =
-    "https://theinsideline.github.io/about-us/dist/js/chunk-vendors.js";
+  return scriptElement;
+};
 
+const createStyleElement = (url) => {
   const styleElement = document.createElement("link");
   styleElement.rel = "stylesheet";
-  styleElement.href =
-    "https://theinsideline.github.io/about-us/dist/css/index.css";
+  styleElement.href = url;
+
+  return styleElement;
+};
+
+const load = () => {
+  const appElement = createScriptElement("https://theinsideline.github.io/about-us/dist/js/index.js");
+  const chunkElement = createScriptElement("https://theinsideline.github.io/about-us/dist/js/chunk-vendors.js");
+  const styleElement = createStyleElement("https://theinsideline.github.io/about-us/dist/css/index.css");
 
   document.head.append(appElement);
   document.head.append(chunkElement);
