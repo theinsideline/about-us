@@ -125,6 +125,9 @@ import { PUBLIC_DOMAIN } from "@/constants";
 
     &__content {
       .content__row {
+        flex-wrap: nowrap;
+        flex-shrink: inherit;
+
         .card {
           &:first-child {
             margin-right: 10px !important;

@@ -230,7 +230,7 @@ defineProps({
 @include desktop {
   .join-our-team-card {
     display: inline-block;
-    width: calc(((100vw - 2 * var(--component-padding)) / 2) - 10px);
+    width: calc(((100vw - 2 * var(--component-padding)) / 2) - 20px);
     height: 471px;
     padding-top: 40px;
     padding-left: 40px;
