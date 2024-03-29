@@ -54,12 +54,13 @@ const cards = ref([
         :button-link="card.buttonLink"
       />
     </div>
+
     <Carousel
-      :autoplay="4000"
-      class="the-join-our-team__content tablet"
       wrap-around
-      :items-to-show="2"
       snap-align="start"
+      :autoplay="4000"
+      :items-to-show="2"
+      class="the-join-our-team__content tablet"
     >
       <Slide v-for="(card, key) of cards" :key="key" class="card">
         <JoinOurTeamCard
@@ -72,6 +73,7 @@ const cards = ref([
         />
       </Slide>
     </Carousel>
+
     <Carousel
       :autoplay="4000"
       class="the-join-our-team__content mobile"
@@ -133,7 +135,8 @@ const cards = ref([
   .the-join-our-team {
     margin-top: 45px;
 
-    .desktop + .mobile {
+    .desktop,
+    .mobile {
       display: none;
     }
 
