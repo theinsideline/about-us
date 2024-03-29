@@ -135,6 +135,7 @@ const cards = ref([
     display: flex;
     justify-content: center;
     cursor: default;
+    margin-top: 15px;
 
     span {
       font-family: Inter;
