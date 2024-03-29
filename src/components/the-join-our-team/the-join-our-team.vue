@@ -58,6 +58,7 @@ const cards = ref([
     <Carousel
       wrap-around
       :items-to-show="2"
+      snap-align="center-odd"
       class="the-join-our-team__content tablet"
     >
       <Slide v-for="(card, key) of cards" :key="key" class="card">
