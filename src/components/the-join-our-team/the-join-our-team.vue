@@ -98,6 +98,12 @@ const cards = ref([
 @import "@/assets/scss/breakpoints.scss";
 @import "@/assets/scss/headings.scss";
 
+v-deep {
+  .carousel__slide::before {
+    display: none;
+  }
+}
+
 .the-join-our-team {
   &__content {
     display: flex;
