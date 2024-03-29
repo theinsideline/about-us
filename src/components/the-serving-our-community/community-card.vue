@@ -106,8 +106,8 @@ defineProps({
   .community-card {
     height: 470px;
     padding: 40px;
-    width: 705px;
-    max-width: calc(((100vw - 2 * var(--component-padding)) / 2) - 30px);
+    width: 100%;
+    max-width: 705px;
     margin-bottom: 30px;
   }
 }

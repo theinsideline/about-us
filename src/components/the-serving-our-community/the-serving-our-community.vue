@@ -152,7 +152,8 @@ import { PUBLIC_DOMAIN } from "@/constants";
         width: 100%;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        flex-shrink: inherit;
 
         .card {
           &:first-child {
