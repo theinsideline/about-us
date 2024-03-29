@@ -140,7 +140,7 @@ const cards = ref([
     &__content {
       margin: 0;
 
-      .cart {
+      .card {
         margin: 0;
       }
     }
