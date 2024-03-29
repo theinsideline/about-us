@@ -145,7 +145,7 @@ defineProps({
 @include tablet {
   .join-our-team-card {
     display: flex;
-    width: 100%;
+    width: calc(100vw - 2 * var(--component-padding));
     height: 471px;
     padding-top: 40px;
     padding-left: 40px;
