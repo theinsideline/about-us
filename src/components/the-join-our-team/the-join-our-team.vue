@@ -159,6 +159,10 @@ const cards = ref([
 
     &__content {
       margin: 0;
+
+      .card::before {
+        display: none;
+      }
     }
   }
 }
