@@ -93,6 +93,10 @@ const cards = ref([
         />
       </Slide>
     </Carousel>
+
+    <div class="the-join-our-team__swipe-to-see-more">
+      <span>↔ Swipe to see more</span>
+    </div>
   </div>
 </template>
 
@@ -123,6 +127,14 @@ const cards = ref([
   .tablet {
     .card::before {
       display: none;
+    }
+  }
+
+  &__swipe-to-see-more {
+    span {
+      font-family: Inter;
+      font-size: 12px;
+      text-align: center;
     }
   }
 }
@@ -226,6 +238,10 @@ const cards = ref([
           margin-left: 30px;
         }
       }
+    }
+
+    &__swipe-to-see-more {
+      display: none;
     }
   }
 }
