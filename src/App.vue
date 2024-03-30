@@ -1,4 +1,4 @@
-<script setup lang="ts">
+hscript setup lang="ts">
 import { onMounted } from "vue";
 
 onMounted(() => {
