@@ -30,7 +30,7 @@ const scroll = () => {
       autoplay
       loop
       class="the-hero__background-image"
-      :src="`${PUBLIC_DOMAIN}/public/videos/Hero.mp4`"
+      :src="`${PUBLIC_DOMAIN}/videos/Hero.mp4`"
     />
 
     <div class="the-hero__title heading_3 paragraph">

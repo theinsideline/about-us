@@ -16,7 +16,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
           description="Located in Calgary AB, we call the Rocky Mountains home. We have deep gratitude for our local trail"
           button-text="Find us"
           button-link="https://www.theinsideline.ca/service/location/"
-          :image="`${PUBLIC_DOMAIN}/public/images/Home.jpg`"
+          :image="`${PUBLIC_DOMAIN}/images/Home.jpg`"
         />
         <CommunityCard
           class="card"
@@ -24,7 +24,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
           description="At The Inside Line, our goal is to make your bicycle perform to its full potential so you can have a great ride"
           button-text="Learn More"
           button-link="https://www.theinsideline.ca/service/service/"
-          :image="`${PUBLIC_DOMAIN}/public/images/Service.jpg`"
+          :image="`${PUBLIC_DOMAIN}/images/Service.jpg`"
         />
       </div>
       <div class="content__row">
@@ -34,7 +34,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
           description="If we are not out there crafting our next line we are in the shop talking about the MMBTS trail"
           button-text="MMTBS Membership"
           button-link="https://www.mmbts.com/join-mmbts"
-          :image="`${PUBLIC_DOMAIN}/public/images/Network.jpg`"
+          :image="`${PUBLIC_DOMAIN}/images/Network.jpg`"
         />
         <CommunityCard
           title="Equality"
@@ -42,7 +42,7 @@ import { PUBLIC_DOMAIN } from "@/constants";
           description="We firmly believe that equity in sport is important. We strive to help women enjoy mountain biking"
           button-text="Learn More"
           button-link="https://www.slaydies.com/"
-          :image="`${PUBLIC_DOMAIN}/public/images/Equality.jpg`"
+          :image="`${PUBLIC_DOMAIN}/images/Equality.jpg`"
         />
       </div>
     </div>

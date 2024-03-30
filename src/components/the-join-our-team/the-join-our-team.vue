@@ -7,7 +7,7 @@ import JoinOurTeamCard from "@/components/the-join-our-team/join-our-team-card.v
 
 const cards = ref([
   {
-    icon: `${PUBLIC_DOMAIN}/public/icons/Icons_Flame.svg`,
+    icon: `${PUBLIC_DOMAIN}/icons/Icons_Flame.svg`,
     title: "Careers",
     subTitle: "Passions for bikes? Want to work in the industry?",
     description:
@@ -16,7 +16,7 @@ const cards = ref([
     buttonLink: "https://www.theinsideline.ca/service/careers/",
   },
   {
-    icon: `${PUBLIC_DOMAIN}/public/icons/Icons_Flag.svg`,
+    icon: `${PUBLIC_DOMAIN}/icons/Icons_Flag.svg`,
     title: "Ambassadors",
     subTitle: "Grassroots racing?  Local hero? Social media influencer?",
     description:
@@ -25,7 +25,7 @@ const cards = ref([
     buttonLink: "",
   },
   {
-    icon: `${PUBLIC_DOMAIN}/public/icons/Icons_Community.svg`,
+    icon: `${PUBLIC_DOMAIN}/icons/Icons_Community.svg`,
     title: "Affiliates",
     subTitle: "Producing content? Strong media presence?",
     description:
