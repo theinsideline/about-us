@@ -1,0 +1,32 @@
+name: Deploy to GitHub pages
+permissions:
+  contents: write
+on:
+  push:
+    branches: [main]
+env:
+  BUILD_FOLDER: dist # or .output/public/yourrepositoryname/
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  BRUNCH: production
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build Vue App
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+          cache: 'npm'
+
+      - run: |
+          npm install
+          npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ${{env.BUILD_FOLDER}}
+          branch: ${{env.BRANCH}}
