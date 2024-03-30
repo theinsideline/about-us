@@ -7,7 +7,7 @@ on:
 env:
   BUILD_FOLDER: dist # or .output/public/yourrepositoryname/
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  BRUNCH: production
+  BRANCH: production
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,6 +24,7 @@ jobs:
       - run: |
           npm install
           npm run build
+          cp ./load-script.js ./dist/about-us.js
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
