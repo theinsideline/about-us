@@ -16,9 +16,9 @@ const createStyleElement = (url) => {
 };
 
 const load = () => {
-  const appElement = createScriptElement("https://theinsideline.github.io/about-us/dist/js/index.js");
-  const chunkElement = createScriptElement("https://theinsideline.github.io/about-us/dist/js/chunk-vendors.js");
-  const styleElement = createStyleElement("https://theinsideline.github.io/about-us/dist/css/index.css");
+  const appElement = createScriptElement("https://theinsideline.github.io/about-us/js/index.js");
+  const chunkElement = createScriptElement("https://theinsideline.github.io/about-us/js/chunk-vendors.js");
+  const styleElement = createStyleElement("https://theinsideline.github.io/about-us/css/index.css");
 
   document.head.append(appElement);
   document.head.append(chunkElement);
