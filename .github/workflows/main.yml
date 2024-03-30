@@ -24,7 +24,7 @@ jobs:
       - run: |
           npm install
           npm run build
-          cp ./load-script.js ./dist/about-us.js
+          cp ./load-script.js ./dist/install.js
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
