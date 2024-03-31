@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { defineProps } from 'vue'
-    import { LinkButton } from '@theinsideline/common'
+    import { LinkButton, Heading3 } from '@theinsideline/common'
 
     defineProps({
         title: {
@@ -32,9 +32,8 @@
         :href="buttonLink"
         :style="{ 'background-image': `url(${image})` }"
     >
-        <div class="community-card__title heading_3">
-            <h3>{{ title }}</h3>
-        </div>
+        <Heading3 class="community-card__title" :text="title" />
+         
         <div class="community-card__description paragraph">
             <span>{{ description }}</span>
         </div>
@@ -48,7 +47,6 @@
 </template>
 
 <style lang="scss" scoped>
-    @import '@/assets/scss/headings.scss';
     @import '@/assets/scss/paragraph.scss';
 
     .community-card {

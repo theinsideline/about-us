@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import { ref, onMounted } from 'vue'
     import { PUBLIC_DOMAIN } from '@/constants'
+    import { Heading3 } from '@theinsideline/common'
 
     const videoRef = ref<HTMLVideoElement>()
 
@@ -36,8 +37,8 @@
             :src="`${PUBLIC_DOMAIN}/videos/Hero.mp4`"
         />
 
-        <div class="the-hero__title heading_3 paragraph">
-            <h3>We Are Mountain Bikers</h3>
+        <div class="the-hero__title paragraph">
+            <Heading3 text="We Are Mountain Bikers" />
             <span
                 >Drooling over new technology, daydreaming about our next ride and wrenching on bikes. We only sell what we ride, and for
                 that reason you can be sure when shopping at The Inside Line that you are getting top-quality mountain bike products tested
@@ -55,7 +56,6 @@
 </template>
 
 <style scoped lang="scss">
-    @import '@/assets/scss/headings.scss';
     @import '@/assets/scss/paragraph.scss';
 
     .the-hero {
@@ -82,8 +82,13 @@
             z-index: 1;
             cursor: default;
 
-            h3 {
-                color: white;
+            ::v-deep {
+                .heading_3 {
+                    h3 {
+                        margin-bottom: 0;
+                    color: white;
+                    }
+                }
             }
 
             span {

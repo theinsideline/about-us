@@ -4,6 +4,7 @@
     import 'vue3-carousel/dist/carousel.css'
     import { Carousel, Slide } from 'vue3-carousel'
     import JoinOurTeamCard from '@/components/the-join-our-team/join-our-team-card.vue'
+    import { Heading2 } from '@theinsideline/common'
 
     const cards = ref([
         {
@@ -36,9 +37,10 @@
 
 <template>
     <div class="the-join-our-team">
-        <div class="the-join-our-team__title heading_2">
-            <h2>Join Our Team</h2>
-        </div>
+        <Heading2
+            class="the-join-our-team__title"
+            text="Join Our Team"
+        />
 
         <div class="the-join-our-team__content desktop">
             <JoinOurTeamCard
@@ -107,8 +109,6 @@
 </template>
 
 <style lang="scss" scoped>
-    @import '@/assets/scss/headings.scss';
-
     ::v-deep {
         .carousel__slide {
             padding: 0 !important;

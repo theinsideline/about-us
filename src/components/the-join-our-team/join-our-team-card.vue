@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { defineProps } from 'vue'
-    import { LinkButton } from '@theinsideline/common'
+    import { LinkButton, Heading3 } from '@theinsideline/common'
 
     defineProps({
         icon: {
@@ -41,9 +41,8 @@
                 alt="Join out ream icon"
             />
         </div>
-        <div class="join-our-team-card__title heading_3">
-            <h3>{{ title }}</h3>
-        </div>
+        <Heading3 class="join-our-team-card__title" :text="title" />
+           
         <div class="join-our-team-card__subtitle paragraph">
             <span>{{ subTitle }}</span>
         </div>
@@ -60,7 +59,6 @@
 </template>
 
 <style lang="scss" scoped>
-    @import '@/assets/scss/headings.scss';
     @import '@/assets/scss/paragraph.scss';
 
     .join-our-team-card {
