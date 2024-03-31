@@ -39,7 +39,7 @@
         <div class="the-join-our-team__title heading_2">
             <h2>Join Our Team</h2>
         </div>
-        
+
         <div class="the-join-our-team__content desktop">
             <JoinOurTeamCard
                 v-for="(card, key) of cards"
