@@ -101,8 +101,6 @@ const cards = ref([
 </template>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/fonts.scss";
-@import "@/assets/scss/breakpoints.scss";
 @import "@/assets/scss/headings.scss";
 
 ::v-deep {

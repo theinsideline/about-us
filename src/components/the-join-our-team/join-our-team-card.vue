@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
-import LinkButton from "@/components/ui/link-button.vue";
+import { LinkButton } from "@theinsideline/common";
 
 defineProps({
   icon: {
@@ -51,8 +51,6 @@ defineProps({
 </template>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/fonts.scss";
-@import "@/assets/scss/breakpoints.scss";
 @import "@/assets/scss/headings.scss";
 @import "@/assets/scss/paragraph.scss";
 

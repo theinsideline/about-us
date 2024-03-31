@@ -51,8 +51,6 @@ const scroll = () => {
 </template>
 
 <style scoped lang="scss">
-@import "@/assets/scss/fonts.scss";
-@import "@/assets/scss/breakpoints.scss";
 @import "@/assets/scss/headings.scss";
 @import "@/assets/scss/paragraph.scss";
 

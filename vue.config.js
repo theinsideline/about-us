@@ -1,4 +1,5 @@
 const { defineConfig } = require("@vue/cli-service");
+
 module.exports = defineConfig({
   transpileDependencies: true,
   filenameHashing: false,
@@ -7,7 +8,17 @@ module.exports = defineConfig({
   pages: {
     index: {
       title: "About us",
-      entry: 'src/main.ts'
-    }
-  }
+      entry: "src/main.ts",
+    },
+  },
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `
+        @import "@theinsideline/common/style.css";
+        @import "@theinsideline/common/scss/main.scss";
+          `,
+      },
+    },
+  },
 });
