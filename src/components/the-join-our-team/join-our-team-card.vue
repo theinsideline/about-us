@@ -77,7 +77,7 @@
             justify-content: center;
 
             ::v-deep {
-                .paragraph {
+                span {
                     max-width: 400px;
                     font-weight: bold;
                 }
@@ -121,7 +121,7 @@
                 margin-bottom: 11px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 60px;
                     }
                 }
@@ -131,7 +131,7 @@
                 margin-bottom: 15px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 100px;
                     }
                 }
@@ -167,7 +167,7 @@
                 margin-bottom: 11px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 46px;
                     }
                 }
@@ -177,7 +177,7 @@
                 margin-bottom: 20px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 70px;
                     }
                 }
@@ -213,7 +213,7 @@
                 margin-bottom: 11px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 46px;
                     }
                 }
@@ -224,7 +224,7 @@
                 margin-bottom: 20px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 70px;
                     }
                 }
@@ -260,7 +260,7 @@
                 margin-bottom: 11px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 46px;
                     }
                 }
@@ -270,7 +270,7 @@
                 margin-bottom: 20px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 70px;
                     }
                 }
@@ -308,7 +308,7 @@
                 margin-bottom: 22px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 84px;
                     }
                 }
@@ -318,7 +318,7 @@
                 margin-bottom: 30px;
 
                 ::v-deep {
-                    .paragraph {
+                    span {
                         height: 140px;
                     }
                 }

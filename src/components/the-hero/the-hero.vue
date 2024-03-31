@@ -92,11 +92,12 @@
 
         &__learn-more {
             position: absolute;
-            bottom: 0;
+            bottom: -2%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
             cursor: pointer;
+
 
             span {
                 color: white;
