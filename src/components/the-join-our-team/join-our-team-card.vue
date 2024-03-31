@@ -117,19 +117,15 @@
                 margin-bottom: 15px;
             }
 
-            &__subtitle {
-                ::v-deep {
-                    .paragraph {
-                        margin-bottom: 11px;
+            &__subtitle :deep(.paragraph) {
+                margin-bottom: 11px;
 
-                        span {
-                            height: 60px;
-                        }
-                    }
+                span {
+                    height: 60px;
                 }
             }
 
-            deep(&__description) {
+            &__description :deep(.paragraph) {
                 margin-bottom: 15px;
 
                 span {
