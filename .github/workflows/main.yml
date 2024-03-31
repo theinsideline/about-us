@@ -19,6 +19,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Authenticate with private NPM package
+        run: echo "//registry.npmjs.org/:_authToken=${{ env.GITHUB_TOKEN }}" > ~/.npmrc
+
       - name: Build Vue App
         uses: actions/setup-node@v3
         with:
