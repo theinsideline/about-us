@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import { defineProps } from 'vue'
-    import { LinkButton, Heading3 } from '@theinsideline/common'
+    import { LinkButton, Heading3, Paragraph } from '@theinsideline/common'
 
     defineProps({
         icon: {
@@ -31,36 +31,22 @@
 </script>
 
 <template>
-    <a
-        :href="buttonLink"
-        class="join-our-team-card"
-    >
+    <a :href="buttonLink" class="join-our-team-card">
         <div class="join-our-team-card__icon">
-            <img
-                :src="icon"
-                alt="Join out ream icon"
-            />
+            <img :src="icon" alt="Join out ream icon" />
         </div>
         <Heading3 class="join-our-team-card__title" :text="title" />
-           
-        <div class="join-our-team-card__subtitle paragraph">
-            <span>{{ subTitle }}</span>
-        </div>
-        <div class="join-our-team-card__description paragraph">
-            <span>{{ description }}</span>
-        </div>
+
+        <Paragraph class="join-our-team-card__subtitle" :text="subTitle" />
+        <Paragraph class="join-our-team-card__description paragraph" :text="description" />
+
         <div class="join-our-team-card__button-link">
-            <LinkButton
-                :text="buttonText"
-                :link="buttonLink"
-            />
+            <LinkButton :text="buttonText" :link="buttonLink" />
         </div>
     </a>
 </template>
 
 <style lang="scss" scoped>
-    @import '@/assets/scss/paragraph.scss';
-
     .join-our-team-card {
         width: 460px;
         background: #f0f0f0;

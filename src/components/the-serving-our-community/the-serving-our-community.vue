@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { Heading2 } from "@theinsideline/common";
+    import { Heading2 } from '@theinsideline/common'
     import CommunityCard from '@/components/the-serving-our-community/community-card.vue'
     import { PUBLIC_DOMAIN } from '@/constants'
 </script>
@@ -7,7 +7,7 @@
 <template>
     <div class="the-serving-our-community">
         <Heading2 class="the-serving-our-community__title" text="Serving Our Community" />
-          
+
         <div class="the-serving-our-community__content">
             <div class="content__row">
                 <CommunityCard

@@ -1,7 +1,8 @@
 <script setup lang="ts">
     import { ref, onMounted } from 'vue'
     import { PUBLIC_DOMAIN } from '@/constants'
-    import { Heading3 } from '@theinsideline/common'
+    import { Heading3, Paragraph } from '@theinsideline/common'
+    import { Pagination } from 'vue3-carousel'
 
     const videoRef = ref<HTMLVideoElement>()
 
@@ -23,10 +24,7 @@
 </script>
 
 <template>
-    <div
-        class="the-hero"
-        id="hero"
-    >
+    <div class="the-hero" id="hero">
         <video
             ref="videoRef"
             playsinline
@@ -39,25 +37,20 @@
 
         <div class="the-hero__title paragraph">
             <Heading3 text="We Are Mountain Bikers" />
-            <span
-                >Drooling over new technology, daydreaming about our next ride and wrenching on bikes. We only sell what we ride, and for
+            <Paragraph
+                text="Drooling over new technology, daydreaming about our next ride and wrenching on bikes. We only sell what we ride, and for
                 that reason you can be sure when shopping at The Inside Line that you are getting top-quality mountain bike products tested
-                by everyday mountain bikers</span
-            >
+                by everyday mountain bikers"
+            />
         </div>
 
-        <div
-            class="the-hero__learn-more paragraph"
-            @click="scroll"
-        >
+        <div class="the-hero__learn-more paragraph" @click="scroll">
             <span>Learn More <i>↓</i></span>
         </div>
     </div>
 </template>
 
 <style scoped lang="scss">
-    @import '@/assets/scss/paragraph.scss';
-
     .the-hero {
         width: 100vw;
         position: relative;
@@ -86,13 +79,14 @@
                 .heading_3 {
                     h3 {
                         margin-bottom: 0;
-                    color: white;
+                        color: white;
                     }
                 }
-            }
 
-            span {
-                color: white;
+                .paragraph {
+                    color: white;
+                    text-align: center;
+                }
             }
         }
 

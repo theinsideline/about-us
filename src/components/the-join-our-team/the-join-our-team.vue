@@ -37,10 +37,7 @@
 
 <template>
     <div class="the-join-our-team">
-        <Heading2
-            class="the-join-our-team__title"
-            text="Join Our Team"
-        />
+        <Heading2 class="the-join-our-team__title" text="Join Our Team" />
 
         <div class="the-join-our-team__content desktop">
             <JoinOurTeamCard
@@ -64,10 +61,7 @@
             snap-align="center-even"
             class="the-join-our-team__content tablet"
         >
-            <Slide
-                v-for="(card, key) of cards"
-                :key="key"
-            >
+            <Slide v-for="(card, key) of cards" :key="key">
                 <JoinOurTeamCard
                     class="card"
                     :icon="card.icon"
@@ -80,17 +74,8 @@
             </Slide>
         </Carousel>
 
-        <Carousel
-            wrap-around
-            pause-autoplay-on-hover
-            :autoplay="4000"
-            class="the-join-our-team__content mobile"
-        >
-            <Slide
-                v-for="(card, key) of cards"
-                :key="key"
-                class="card"
-            >
+        <Carousel wrap-around pause-autoplay-on-hover :autoplay="4000" class="the-join-our-team__content mobile">
+            <Slide v-for="(card, key) of cards" :key="key" class="card">
                 <JoinOurTeamCard
                     :icon="card.icon"
                     :title="card.title"

@@ -10,7 +10,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@theinsideline/common": "^0.2.0",
+    "@theinsideline/common": "^0.2.1",
     "core-js": "^3.8.3",
     "typescript": "^5.4.3",
     "vue": "^3.2.13",

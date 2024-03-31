@@ -9,5 +9,5 @@
     "arrowParens": "avoid",
     "vueIndentScriptAndStyle": true,
     "embeddedLanguageFormatting": "auto",
-    "singleAttributePerLine": true
+    "singleAttributePerLine": false
 }
