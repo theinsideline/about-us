@@ -7,11 +7,10 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "format": "prettier ./src --write",
-    "pre-commit": "prettier ./src --write",
     "prepare": "husky"
   },
   "dependencies": {
-    "@theinsideline/common": "^0.1.2",
+    "@theinsideline/common": "^0.1.4",
     "core-js": "^3.8.3",
     "typescript": "^5.4.3",
     "vue": "^3.2.13",
