@@ -35,8 +35,8 @@
         <div class="join-our-team-card__icon">
             <img :src="icon" alt="Join out ream icon" />
         </div>
+        
         <Heading3 class="join-our-team-card__title" :text="title" />
-
         <Paragraph class="join-our-team-card__subtitle" :text="subTitle" />
         <Paragraph class="join-our-team-card__description paragraph" :text="description" />
 

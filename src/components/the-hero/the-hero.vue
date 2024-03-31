@@ -35,7 +35,7 @@
             :src="`${PUBLIC_DOMAIN}/videos/Hero.mp4`"
         />
 
-        <div class="the-hero__title paragraph">
+        <div class="the-hero__title">
             <Heading3 text="We Are Mountain Bikers" />
             <Paragraph
                 text="Drooling over new technology, daydreaming about our next ride and wrenching on bikes. We only sell what we ride, and for
@@ -92,12 +92,11 @@
 
         &__learn-more {
             position: absolute;
-            bottom: -2%;
+            bottom: 0;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
             cursor: pointer;
-
 
             span {
                 color: white;
