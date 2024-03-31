@@ -76,9 +76,11 @@
             display: flex;
             justify-content: center;
 
-            span {
-                max-width: 400px;
-                font-weight: bold;
+            ::v-deep {
+                .paragraph {
+                    max-width: 400px;
+                    font-weight: bold;
+                }
             }
         }
 
@@ -118,16 +120,20 @@
             &__subtitle {
                 margin-bottom: 11px;
 
-                span {
-                    height: 60px;
+                ::v-deep {
+                    .paragraph {
+                        height: 60px;
+                    }
                 }
             }
 
             &__description {
                 margin-bottom: 15px;
 
-                span {
-                    height: 100px;
+                ::v-deep {
+                    .paragraph {
+                        height: 100px;
+                    }
                 }
             }
         }
@@ -160,16 +166,20 @@
             &__subtitle {
                 margin-bottom: 11px;
 
-                span {
-                    height: 46px;
+                ::v-deep {
+                    .paragraph {
+                        height: 46px;
+                    }
                 }
             }
 
             &__description {
                 margin-bottom: 20px;
 
-                span {
-                    height: 70px;
+                ::v-deep {
+                    .paragraph {
+                        height: 70px;
+                    }
                 }
             }
         }
@@ -202,8 +212,10 @@
             &__subtitle {
                 margin-bottom: 11px;
 
-                span {
-                    height: 46px;
+                ::v-deep {
+                    .paragraph {
+                        height: 46px;
+                    }
                 }
             }
 
@@ -211,8 +223,10 @@
                 margin: 0;
                 margin-bottom: 20px;
 
-                span {
-                    height: 70px;
+                ::v-deep {
+                    .paragraph {
+                        height: 70px;
+                    }
                 }
             }
         }
@@ -245,16 +259,20 @@
             &__subtitle {
                 margin-bottom: 11px;
 
-                span {
-                    height: 46px;
+                ::v-deep {
+                    .paragraph {
+                        height: 46px;
+                    }
                 }
             }
 
             &__description {
                 margin-bottom: 20px;
 
-                span {
-                    height: 70px;
+                ::v-deep {
+                    .paragraph {
+                        height: 70px;
+                    }
                 }
             }
         }
@@ -289,16 +307,20 @@
             &__subtitle {
                 margin-bottom: 22px;
 
-                span {
-                    height: 84px;
+                ::v-deep {
+                    .paragraph {
+                        height: 84px;
+                    }
                 }
             }
 
             &__description {
                 margin-bottom: 30px;
 
-                span {
-                    height: 140px;
+                ::v-deep {
+                    .paragraph {
+                        height: 140px;
+                    }
                 }
             }
         }
