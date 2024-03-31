@@ -35,7 +35,7 @@
         <div class="join-our-team-card__icon">
             <img :src="icon" alt="Join out ream icon" />
         </div>
-        
+
         <Heading3 class="join-our-team-card__title" :text="title" />
         <Paragraph class="join-our-team-card__subtitle" :text="subTitle" />
         <Paragraph class="join-our-team-card__description paragraph" :text="description" />
@@ -118,21 +118,25 @@
             }
 
             &__subtitle {
-                margin-bottom: 11px;
-
                 ::v-deep {
-                    span {
-                        height: 60px;
+                    .paragraph {
+                        margin-bottom: 11px;
+
+                        span {
+                            height: 60px;
+                        }
                     }
                 }
             }
 
             &__description {
-                margin-bottom: 15px;
-
                 ::v-deep {
-                    span {
-                        height: 100px;
+                    .paragraph {
+                        margin-bottom: 15px;
+
+                        span {
+                            height: 100px;
+                        }
                     }
                 }
             }
@@ -164,21 +168,25 @@
             }
 
             &__subtitle {
-                margin-bottom: 11px;
-
                 ::v-deep {
-                    span {
-                        height: 46px;
+                    .paragraph {
+                        margin-bottom: 11px;
+
+                        span {
+                            height: 46px;
+                        }
                     }
                 }
             }
 
             &__description {
-                margin-bottom: 20px;
-
                 ::v-deep {
-                    span {
-                        height: 70px;
+                    .paragraph {
+                        margin-bottom: 20px;
+
+                        span {
+                            height: 70px;
+                        }
                     }
                 }
             }
@@ -210,22 +218,25 @@
             }
 
             &__subtitle {
-                margin-bottom: 11px;
-
                 ::v-deep {
-                    span {
-                        height: 46px;
+                    .paragraph {
+                        margin-bottom: 11px;
+
+                        span {
+                            height: 46px;
+                        }
                     }
                 }
             }
 
             &__description {
-                margin: 0;
-                margin-bottom: 20px;
-
                 ::v-deep {
-                    span {
-                        height: 70px;
+                    .paragraph {
+                        margin-bottom: 20px;
+
+                        span {
+                            height: 70px;
+                        }
                     }
                 }
             }
@@ -257,21 +268,25 @@
             }
 
             &__subtitle {
-                margin-bottom: 11px;
-
                 ::v-deep {
-                    span {
-                        height: 46px;
+                    .paragraph {
+                        margin-bottom: 11px;
+
+                        span {
+                            height: 46px;
+                        }
                     }
                 }
             }
 
             &__description {
-                margin-bottom: 20px;
-
                 ::v-deep {
-                    span {
-                        height: 70px;
+                    .paragraph {
+                        margin-bottom: 20px;
+
+                        span {
+                            height: 70px;
+                        }
                     }
                 }
             }
@@ -305,21 +320,25 @@
             }
 
             &__subtitle {
-                margin-bottom: 22px;
-
                 ::v-deep {
-                    span {
-                        height: 84px;
+                    .paragraph {
+                        margin-bottom: 22px;
+
+                        span {
+                            height: 84px;
+                        }
                     }
                 }
             }
 
             &__description {
-                margin-bottom: 30px;
-
                 ::v-deep {
-                    span {
-                        height: 140px;
+                    .paragraph {
+                        margin-bottom: 30px;
+
+                        span {
+                            height: 140px;
+                        }
                     }
                 }
             }

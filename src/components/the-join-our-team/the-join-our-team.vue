@@ -74,7 +74,7 @@
             </Slide>
         </Carousel>
 
-        <Carousel wrap-around pause-autoplay-on-hover :autoplay="4000" class="the-join-our-team__content mobile">
+        <Carousel wrap-around pause-autoplay-on-hover class="the-join-our-team__content mobile">
             <Slide v-for="(card, key) of cards" :key="key" class="card">
                 <JoinOurTeamCard
                     :icon="card.icon"
