@@ -2,6 +2,7 @@ name: Deploy to GitHub pages
 
 permissions:
   contents: write
+  packages: write
 
 on:
   push:
