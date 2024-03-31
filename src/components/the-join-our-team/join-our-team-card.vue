@@ -130,12 +130,10 @@
             }
 
             deep(&__description) {
-                .paragraph {
-                    margin-bottom: 15px;
+                margin-bottom: 15px;
 
-                    span {
-                        height: 100px;
-                    }
+                span {
+                    height: 100px;
                 }
             }
         }
