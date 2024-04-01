@@ -6,7 +6,7 @@
 
 <template>
     <div class="the-serving-our-community">
-        <Heading2 class="the-serving-our-community__title" text="Serving Our Community" />
+        <Heading2 id="community" class="the-serving-our-community__title" text="Serving Our Community" />
 
         <div class="the-serving-our-community__content">
             <div class="content__row">
