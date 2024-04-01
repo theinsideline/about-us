@@ -125,7 +125,7 @@
                 }
             }
 
-            :deep(&__description.paragraph) {
+            :deep(&__description .paragraph) {
                 margin-bottom: 15px;
 
                 span {
