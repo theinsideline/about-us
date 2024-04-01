@@ -94,7 +94,7 @@
 </template>
 
 <style lang="scss" scoped>
-    ::v-deep {
+    :deep {
         .carousel__slide {
             padding: 0 !important;
 

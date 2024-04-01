@@ -159,27 +159,19 @@
                 margin-bottom: 20px;
             }
 
-            &__subtitle {
-                ::v-deep {
-                    .paragraph {
-                        margin-bottom: 11px;
+            &__subtitle :deep {
+                margin-bottom: 11px;
 
-                        span {
-                            height: 46px;
-                        }
-                    }
+                span {
+                    height: 46px;
                 }
             }
 
-            &__description {
-                ::v-deep {
-                    .paragraph {
-                        margin-bottom: 20px;
+            &__description :deep {
+                margin-bottom: 20px;
 
-                        span {
-                            height: 70px;
-                        }
-                    }
+                span {
+                    height: 70px;
                 }
             }
         }
@@ -209,27 +201,19 @@
                 margin-bottom: 20px;
             }
 
-            &__subtitle {
-                ::v-deep {
-                    .paragraph {
-                        margin-bottom: 11px;
+            &__subtitle :deep {
+                margin-bottom: 11px;
 
-                        span {
-                            height: 46px;
-                        }
-                    }
+                span {
+                    height: 46px;
                 }
             }
 
-            &__description {
-                ::v-deep {
-                    .paragraph {
-                        margin-bottom: 20px;
+            &__description :deep {
+                margin-bottom: 20px;
 
-                        span {
-                            height: 70px;
-                        }
-                    }
+                span {
+                    height: 70px;
                 }
             }
         }
@@ -259,27 +243,19 @@
                 margin-bottom: 20px;
             }
 
-            &__subtitle {
-                ::v-deep {
-                    .paragraph {
-                        margin-bottom: 11px;
+            &__subtitle :deep {
+                margin-bottom: 11px;
 
-                        span {
-                            height: 46px;
-                        }
-                    }
+                span {
+                    height: 46px;
                 }
             }
 
-            &__description {
-                ::v-deep {
-                    .paragraph {
-                        margin-bottom: 20px;
+            &__description :deep {
+                margin-bottom: 20px;
 
-                        span {
-                            height: 70px;
-                        }
-                    }
+                span {
+                    height: 70px;
                 }
             }
         }
@@ -311,27 +287,19 @@
                 margin-bottom: 30px;
             }
 
-            &__subtitle {
-                ::v-deep {
-                    .paragraph {
-                        margin-bottom: 22px;
+            &__subtitle :deep {
+                margin-bottom: 22px;
 
-                        span {
-                            height: 84px;
-                        }
-                    }
+                span {
+                    height: 84px;
                 }
             }
 
-            &__description {
-                ::v-deep {
-                    .paragraph {
-                        margin-bottom: 30px;
+            &__description :deep {
+                margin-bottom: 30px;
 
-                        span {
-                            height: 140px;
-                        }
-                    }
+                span {
+                    height: 140px;
                 }
             }
         }
