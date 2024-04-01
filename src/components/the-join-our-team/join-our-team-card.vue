@@ -117,7 +117,7 @@
                 margin-bottom: 15px;
             }
 
-            :deep(&__subtitle .paragraph) {
+            &__subtitle :deep {
                 margin-bottom: 11px;
 
                 span {
@@ -125,7 +125,7 @@
                 }
             }
 
-            :deep(&__description .paragraph) {
+            &__description :deep {
                 margin-bottom: 15px;
 
                 span {
