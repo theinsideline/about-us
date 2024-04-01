@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { onMounted, ref } from 'vue'
+    import { computed, ref } from 'vue'
     import { PUBLIC_DOMAIN } from '@/constants'
     import 'vue3-carousel/dist/carousel.css'
     import { Carousel, Slide } from 'vue3-carousel'
@@ -34,20 +34,9 @@
         },
     ])
 
-    const isShowMobile = ref(false)
-    const isShowTablet = ref(false)
-    const isShowDesktop = ref(false)
-
-    onMounted(() => {
-        if (window.innerWidth >= 320 && window.innerWidth <= 767) isShowMobile.value = true
-        else isShowMobile.value = false
-
-        if (window.innerWidth >= 768 && window.innerWidth <= 1439) isShowTablet.value = true
-        else isShowTablet.value = false
-
-        if (window.innerWidth >= 1440) isShowDesktop.value = true
-        else isShowDesktop.value = false
-    })
+    const isShowMobile = computed(() => window.innerWidth >= 320 && window.innerWidth <= 767)
+    const isShowTablet = computed(() => window.innerWidth >= 768 && window.innerWidth <= 1439)
+    const isShowDesktop = computed(() => window.innerWidth >= 1440)
 </script>
 
 <template>
