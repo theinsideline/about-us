@@ -129,7 +129,7 @@
                 margin-bottom: 15px;
 
                 span {
-                    height: 100px;
+                    height: 110px;
                 }
             }
         }
@@ -213,7 +213,7 @@
                 margin-bottom: 20px;
 
                 span {
-                    height: 70px;
+                    height: 90px;
                 }
             }
         }
