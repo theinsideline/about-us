@@ -1,7 +1,6 @@
 <script setup lang="ts">
     import { computed, ref } from 'vue'
     import { PUBLIC_DOMAIN } from '@/constants'
-    import 'vue3-carousel/dist/carousel.css'
     import { Carousel, Slide } from 'vue3-carousel'
     import JoinOurTeamCard from '@/components/the-join-our-team/join-our-team-card.vue'
     import { Heading2 } from '@theinsideline/common'
@@ -38,7 +37,7 @@
     const { width } = useWindowSize()
 
     const isShowMobile = computed(() => width.value >= 320 && width.value <= 767)
-    const isShowTablet = computed(() =>width.value >= 768 && width.value <= 1200)
+    const isShowTablet = computed(() => width.value >= 768 && width.value <= 1200)
     const isShowDesktop = computed(() => width.value >= 1201)
 </script>
 
