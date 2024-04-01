@@ -5,6 +5,7 @@
     import { Carousel, Slide } from 'vue3-carousel'
     import JoinOurTeamCard from '@/components/the-join-our-team/join-our-team-card.vue'
     import { Heading2 } from '@theinsideline/common'
+    import { useWindowSize } from '@vueuse/core'
 
     const cards = ref([
         {
@@ -34,9 +35,11 @@
         },
     ])
 
-    const isShowMobile = computed(() => window.innerWidth >= 320 && window.innerWidth <= 767)
-    const isShowTablet = computed(() => window.innerWidth >= 768 && window.innerWidth <= 1439)
-    const isShowDesktop = computed(() => window.innerWidth >= 1440)
+    const { width } = useWindowSize()
+
+    const isShowMobile = computed(() => width.value >= 320 && width.value <= 767)
+    const isShowTablet = computed(() =>width.value >= 768 && width.value <= 1200)
+    const isShowDesktop = computed(() => width.value >= 1201)
 </script>
 
 <template>
