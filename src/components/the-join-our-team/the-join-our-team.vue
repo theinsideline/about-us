@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { ref } from 'vue'
+    import { onMounted, ref } from 'vue'
     import { PUBLIC_DOMAIN } from '@/constants'
     import 'vue3-carousel/dist/carousel.css'
     import { Carousel, Slide } from 'vue3-carousel'
@@ -33,13 +33,28 @@
             buttonLink: '',
         },
     ])
+
+    const isShowMobile = ref(false)
+    const isShowTablet = ref(false)
+    const isShowDesktop = ref(false)
+
+    onMounted(() => {
+        if (window.innerWidth >= 320 && window.innerWidth <= 767) isShowMobile.value = true
+        else isShowMobile.value = false
+
+        if (window.innerWidth >= 768 && window.innerWidth <= 1439) isShowTablet.value = true
+        else isShowTablet.value = false
+
+        if (window.innerWidth >= 1440) isShowDesktop.value = true
+        else isShowDesktop.value = false
+    })
 </script>
 
 <template>
     <div class="the-join-our-team">
         <Heading2 class="the-join-our-team__title" text="Join Our Team" />
 
-        <div class="the-join-our-team__content desktop">
+        <div v-if="isShowDesktop" class="the-join-our-team__content desktop">
             <JoinOurTeamCard
                 v-for="(card, key) of cards"
                 :key="key"
@@ -54,6 +69,7 @@
         </div>
 
         <Carousel
+            v-if="isShowTablet"
             wrap-around
             pause-autoplay-on-hover
             :autoplay="4000"
@@ -74,7 +90,7 @@
             </Slide>
         </Carousel>
 
-        <Carousel wrap-around pause-autoplay-on-hover :autoplay="4000" class="the-join-our-team__content mobile">
+        <Carousel v-if="isShowMobile" wrap-around pause-autoplay-on-hover :autoplay="4000" class="the-join-our-team__content mobile">
             <Slide v-for="(card, key) of cards" :key="key" class="card">
                 <JoinOurTeamCard
                     :icon="card.icon"
