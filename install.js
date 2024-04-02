@@ -15,9 +15,9 @@ const AboutUsInstall = {
         return styleElement
     },
     load: () => {
-        const appElement = createScriptElement('https://theinsideline.github.io/about-us/js/index.js')
-        const chunkElement = createScriptElement('https://theinsideline.github.io/about-us/js/chunk-vendors.js')
-        const styleElement = createStyleElement('https://theinsideline.github.io/about-us/css/index.css')
+        const appElement = AboutUsInstall.createScriptElement('https://theinsideline.github.io/about-us/js/index.js')
+        const chunkElement = AboutUsInstall.createScriptElement('https://theinsideline.github.io/about-us/js/chunk-vendors.js')
+        const styleElement = AboutUsInstall.createStyleElement('https://theinsideline.github.io/about-us/css/index.css')
 
         document.head.append(appElement)
         document.head.append(chunkElement)
