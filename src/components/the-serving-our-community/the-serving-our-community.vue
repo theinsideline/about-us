@@ -94,7 +94,7 @@
 
     @include laptop {
         .the-serving-our-community {
-            margin-top: 45px;
+            margin-top: 25px;
 
             &__content {
                 .content__row {
@@ -117,7 +117,7 @@
 
     @include desktop {
         .the-serving-our-community {
-            margin-top: 45px;
+            margin-top: 25px;
 
             &__content {
                 .content__row {
@@ -140,7 +140,7 @@
 
     @include tv {
         .the-serving-our-community {
-            margin-top: 65px;
+            margin-top: 35px;
             display: flex;
             flex-direction: column;
             justify-content: center;

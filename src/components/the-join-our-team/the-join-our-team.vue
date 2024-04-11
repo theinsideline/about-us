@@ -30,7 +30,7 @@
             description:
                 'Ride for us through our ambassador program. Get deals on bikes, components and apparel to keep your passion alive',
             buttonText: 'Apply Now',
-            buttonLink: '',
+            buttonLink: 'mailto:info@theinsideline.ca',
         },
         {
             icon: `${PUBLIC_DOMAIN}/icons/Icons_Community.svg`,
@@ -38,7 +38,7 @@
             subTitle: 'Producing content? Strong media presence?',
             description: 'Link to your favorite products in your videos, photos and written content and make commission',
             buttonText: 'Apply Now',
-            buttonLink: '',
+            buttonLink: 'mailto:info@theinsideline.ca',
         },
     ])
 </script>
