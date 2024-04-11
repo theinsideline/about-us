@@ -13,15 +13,15 @@
                 <CommunityCard
                     class="card"
                     title="Home"
-                    description="Located in Calgary AB, we call the Rocky Mountains home. We have deep gratitude for our local trail"
+                    description="Located in Calgary AB, we call the Rocky Mountains home"
                     button-text="Find us"
                     button-link="https://www.theinsideline.ca/service/location/"
                     :image="`${PUBLIC_DOMAIN}/images/Home.jpg`"
                 />
                 <CommunityCard
                     class="card"
-                    title="Keeping Your Bike Running"
-                    description="At The Inside Line, our goal is to make your bicycle perform to its full potential so you can have a great ride"
+                    title="Service"
+                    description="We strive to make your MTB perform to its full potential so you can have a great ride"
                     button-text="Learn More"
                     button-link="https://www.theinsideline.ca/service/service/"
                     :image="`${PUBLIC_DOMAIN}/images/Service.jpg`"
@@ -30,8 +30,8 @@
             <div class="content__row">
                 <CommunityCard
                     class="card"
-                    title="Supporting Local Networks"
-                    description="If we are not out there crafting our next line we are in the shop talking about the MMBTS trail"
+                    title="Supporting Networks"
+                    description="We are dedicated to giving back to our local networks, MMBTS and CAMBA"
                     button-text="MMTBS Membership"
                     button-link="https://www.mmbts.com/join-mmbts"
                     :image="`${PUBLIC_DOMAIN}/images/Network.jpg`"
@@ -39,7 +39,7 @@
                 <CommunityCard
                     title="Equality"
                     class="card"
-                    description="We firmly believe that equity in sport is important. We strive to help women enjoy mountain biking"
+                    description="We believe in equity in sport. Everyone deserves the opportunity to ride MTB’s!"
                     button-text="Learn More"
                     button-link="https://www.slaydies.com/"
                     :image="`${PUBLIC_DOMAIN}/images/Equality.jpg`"

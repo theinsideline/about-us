@@ -38,9 +38,7 @@
         <div class="the-hero__title">
             <Heading3 text="We Are Mountain Bikers" />
             <Paragraph
-                text="Drooling over new technology, daydreaming about our next ride and wrenching on bikes. We only sell what we ride, and for
-                that reason you can be sure when shopping at The Inside Line that you are getting top-quality mountain bike products tested
-                by everyday mountain bikers"
+                text="Drooling over new technology, daydreaming about our next ride and wrenching on bikes. We only sell what we ride"
             />
         </div>
 
