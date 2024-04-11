@@ -57,6 +57,12 @@
         justify-content: center;
         align-items: center;
 
+        &__title {
+            :deep(h2) {
+                margin-bottom: 0;
+            }
+        }
+
         &__content {
             display: flex;
             flex-direction: column;
