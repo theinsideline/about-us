@@ -31,7 +31,7 @@
 </script>
 
 <template>
-    <a :href="buttonLink" class="join-our-team-card">
+    <div class="join-our-team-card">
         <div class="join-our-team-card__icon">
             <img :src="icon" alt="Join out ream icon" />
         </div>
@@ -43,7 +43,7 @@
         <div class="join-our-team-card__button-link">
             <LinkButton :text="buttonText" :link="buttonLink" />
         </div>
-    </a>
+    </div>
 </template>
 
 <style lang="scss" scoped>
