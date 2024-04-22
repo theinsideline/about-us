@@ -99,7 +99,6 @@
     @include mobile {
         .join-our-team-card {
             width: calc(100vw - 2 * var(--component-padding));
-            max-height: 420px;
             padding-top: 20px;
             padding-bottom: 60px;
 
@@ -139,7 +138,6 @@
         .join-our-team-card {
             display: flex;
             width: calc(100vw - 2 * var(--component-padding));
-            height: 471px;
             padding-top: 40px;
             padding-left: 40px;
             padding-right: 40px;
@@ -181,7 +179,6 @@
         .join-our-team-card {
             display: inline-block;
             width: calc(((100vw - 2 * var(--component-padding)) / 2) - 20px);
-            height: 471px;
             padding-top: 40px;
             padding-left: 40px;
             padding-right: 40px;
@@ -223,7 +220,6 @@
         .join-our-team-card {
             display: inline-block;
             width: calc(((100vw - 2 * var(--component-padding)) / 2) - 20px);
-            height: 471px;
             padding-top: 40px;
             padding-left: 40px;
             padding-right: 40px;
@@ -267,7 +263,6 @@
             flex-shrink: inherit;
             width: 100%;
             max-width: 460px;
-            height: 687px;
             padding-top: 60px;
             padding-left: 30px;
             padding-right: 30px;
