@@ -41,7 +41,7 @@
         <Paragraph class="join-our-team-card__description paragraph" :text="description" />
 
         <div class="join-our-team-card__button-link">
-            <LinkButton :text="buttonText" :link="buttonLink" />
+            <LinkButton class="link__button" :text="buttonText" :link="buttonLink" />
         </div>
     </div>
 </template>
@@ -59,6 +59,16 @@
         color: black;
         flex: none;
         margin-top: 0 !important;
+
+        .link__button {
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: #747474 !important;
+                color: white !important;
+                transition: all 0.3s ease-in-out;
+            }
+        }
 
         &__icon {
             display: flex;

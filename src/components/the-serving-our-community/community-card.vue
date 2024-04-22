@@ -32,7 +32,7 @@
         <Paragraph class="community-card__description" :text="description" />
 
         <div class="community-card__button">
-            <LinkButton :text="buttonText" :link="buttonLink" />
+            <LinkButton class="link__button" :text="buttonText" :link="buttonLink" />
         </div>
     </a>
 </template>
@@ -54,6 +54,16 @@
         &__button {
             display: flex;
             justify-content: center;
+
+            .link__button {
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background: #747474 !important;
+                    color: white !important;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
         }
     }
 
