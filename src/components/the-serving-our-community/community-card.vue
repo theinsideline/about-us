@@ -31,7 +31,7 @@
         <Heading3 class="community-card__title" :text="title" />
         <Paragraph class="community-card__description" :text="description" />
 
-        <div  class="community-card__button" >
+        <div class="community-card__button">
             <LinkButton v-if="buttonText" class="link__button" :text="buttonText" :link="buttonLink" />
         </div>
     </component>
