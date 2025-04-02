@@ -12,11 +12,11 @@
             <div class="content__row">
                 <CommunityCard
                     class="card"
-                    title="Home"
-                    description="Located in Calgary AB, we call the Rocky Mountains home"
-                    button-text="Find us"
-                    button-link="https://www.theinsideline.ca/service/location/"
-                    :image="`${PUBLIC_DOMAIN}/images/Home.jpg`"
+                    title="Supporting Networks"
+                    description="We are dedicated to giving back to our local networks, MMBTS and CAMBA"
+                    button-text="MMTBS Membership"
+                    button-link="https://www.mmbts.com/join-mmbts"
+                    :image="`${PUBLIC_DOMAIN}/images/Network.jpg`"
                 />
                 <CommunityCard
                     class="card"
@@ -30,18 +30,15 @@
             <div class="content__row">
                 <CommunityCard
                     class="card"
-                    title="Supporting Networks"
-                    description="We are dedicated to giving back to our local networks, MMBTS and CAMBA"
-                    button-text="MMTBS Membership"
-                    button-link="https://www.mmbts.com/join-mmbts"
-                    :image="`${PUBLIC_DOMAIN}/images/Network.jpg`"
+                    title="Home"
+                    description="Located in Calgary AB, we call the Rocky Mountains home"
+                    :image="`${PUBLIC_DOMAIN}/images/Home.jpg`"
                 />
+
                 <CommunityCard
                     title="Equality"
                     class="card"
                     description="We believe in equity in sport. Everyone deserves the opportunity to ride MTB’s!"
-                    button-text="Learn More"
-                    button-link="https://www.slaydies.com/"
                     :image="`${PUBLIC_DOMAIN}/images/Equality.jpg`"
                 />
             </div>

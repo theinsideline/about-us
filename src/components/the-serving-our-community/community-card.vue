@@ -27,14 +27,14 @@
 </script>
 
 <template>
-    <a class="community-card" :href="buttonLink" :style="{ 'background-image': `url(${image})` }">
+    <component :is="buttonLink ? 'a' : 'div'" class="community-card" :href="buttonLink" :style="{ 'background-image': `url(${image})` }">
         <Heading3 class="community-card__title" :text="title" />
         <Paragraph class="community-card__description" :text="description" />
 
-        <div class="community-card__button">
-            <LinkButton class="link__button" :text="buttonText" :link="buttonLink" />
+        <div  class="community-card__button" >
+            <LinkButton v-if="buttonText" class="link__button" :text="buttonText" :link="buttonLink" />
         </div>
-    </a>
+    </component>
 </template>
 
 <style lang="scss" scoped>
